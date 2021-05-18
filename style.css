@@ -105,3 +105,34 @@ body{
 #footer>a>img{
   margin: 10px;
 }
+
+#backgroundtengah{
+  background-color: #D73515;
+  color: white;
+  justify-content: center;
+  
+}
+
+#backgroundGambar{
+  background-color: #F5E7E7;
+  padding: 10%;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.Gambar{
+  
+ 
+}
+
+.Nama{
+  color: #66392E;
+}
+
+.Harga{
+  color: #D73515;
+}
