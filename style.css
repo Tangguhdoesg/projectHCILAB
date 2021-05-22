@@ -11,10 +11,7 @@ body{
   align-items: center;
   height: 10vh;
 
-
 }
-
-
 
 #logo{
   position: absolute;
@@ -128,15 +125,39 @@ body{
   
 }
 
+#tulisanGallery{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
 #backgroundGambar{
   background-color: #F5E7E7;
-  padding: 10%;
-  margin: 5%;
+  margin: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
+}
 
+.Gambar{
+padding: 25px;
+margin: 25px;
 
+}
+.Gambar>img{
+  padding: 25px;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  /* width: 350px; */
 }
 
 .Nama{
