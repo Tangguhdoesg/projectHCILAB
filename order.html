@@ -5,9 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleorder.css">
 </head>
 <body>
+    <section id="header">
+        <!-- <h2>Burger KEng</h2> -->
+        <div>
+          <img src="Assets/ErJU_R2VkAE-w7Q.jpg" alt="" id="logo">
+        </div>
+        <div class="navbar" id="topbar">
+            <div class="dropdown">
+              <button class="dropbtn">Where do you want to go?</button>
+              <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="order.html">Order</a>
+                <a href="create.html">Create Burger</a>
+                <a href="team.html">Our Team</a>
+              </div>
+              <img src="assets/icon/navigation/arrow_forward_ios_24px.png" alt="" id="arrow">
+            </div>   
+        </div>
+      </section>
+
+    <section class="container">
+        <div class="title">Order Form</div>
+        <form action="#">
+            <div class="customer-details">
+                <div class="input-box">
+                    <span class="form-details">Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="form-details">Email Address</span>
+                    <input type="text" placeholder="Enter your email address" required>
+                </div>
+                <div class="input-box">
+                    <span class="form-details">Phone Number</span>
+                    <input type="text" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-box">
+                    <span class="form-details">Address</span>
+                    <input type="text" placeholder="Enter your address" required>
+                </div>
+                <div class="input-box">
+                    <label for="menu" class="form-details">Menu</label>
+                    <select name="menu" id="menu">
+                        <option value="select">Please select..</option>
+                        <option value="burgerbesar">Burger Besar</option>
+                        <option value="burgersedang">Burger Sedang</option>
+                        <option value="burgerkecil">Burger Kecil</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="servingtype" class="form-details">Serving Type</label>
+                    <select name="servingtype" id="servingtype">
+                        <option value="select">Please select..</option>
+                        <option value="dinein">Dine In</option>
+                        <option value="takeaway">Take Away</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+
+    <section id="footer">
+        <h3>MEET</h3>
+        <img src="Assets/ErJU_R2VkAE-w7Q.jpg" id="logoBawah">
+        <h3>On : </h3>
+        <a href="https://www.facebook.com/">
+          <img src="Assets/facebook.png" alt="" >
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="Assets/instagram.png" alt="">
+        </a>
+        <a href="https://www.twitter.com/">
+          <img src="Assets/twitter.png" alt="">
+        </a>
+        
+      </section>
     
 </body>
 </html>
