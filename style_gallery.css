@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    background-color: #F5E7E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
+}
+
+#logo{
+    position: absolute;
+    width: 57px;
+    height: 64px;
+    left: 50%;
+    right: 50%;
+    top: 2px;
+}
+
+#logoBawah{
+    width: 7%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #F5E7E7;
+    font-family: Arial;
+}
+    
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #FF8732;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 50vh;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #FF8732;
+    padding: 14px 8px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+}
+
+#arrow{
+    width: 5%;
+}
+
+.navbar a:hover, .dropdown:hover {
+    background-color: whitesmoke;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    align-items: flex-end;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #FF8732;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #F5E7E7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#footer{
+    background-color: #F5E7E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer>h3{
+    color: #FF8732;
+}
+
+#footer>a>img{
+    margin: 10px;
+}
+
+#backgroundtengah{
+    background-color: #D73515;
+    color: white;
+    justify-content: center;
+    border: 50px;
+    padding: 50px;
+    
+}
+#tulisanGallery{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#backgroundGambar{
+    background-color: #F5E7E7;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.Gambar{
+padding: 25px;
+margin: 25px;
+width: 609;
+height: 641;
+
+}
+.Gambar>img{
+    padding: 40px;
+    margin: 40px;
+    border: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 400px;
+}
+
+.Nama{
+    color: #66392E;
+}
+
+.Harga{
+    color: #D73515;
+}
+
+
