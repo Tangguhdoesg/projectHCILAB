@@ -1,0 +1,241 @@
+/* Navbar container */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-style: normal;
+}
+  
+#header{
+    background-color: #F5E7E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  
+}
+  
+#logo{
+    position: absolute;
+    width: 57px;
+    height: 64px;
+    left: 50%;
+    right: 50%;
+    top: 2px;
+}
+  
+#logoBawah{
+    width: 7%;
+}
+  
+.navbar {
+    overflow: hidden;
+    background-color: #F5E7E7;
+    font-family: Arial;
+}
+    
+    /* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #FF8732;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+}
+  
+  
+    
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 50vh;
+}
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #FF8732;
+    padding: 14px 8px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+#arrow{
+    width: 5%;
+}
+  
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover {
+    background-color: whitesmoke;
+}
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    align-items: flex-end;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: #FF8732;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #F5E7E7;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+#footer{
+    
+    background-color: #F5E7E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer>h3{
+    color: #FF8732;
+}
+  
+#footer>a>img{
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #D73515;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    padding: 25px 30px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 75px;
+    color: #F5E7E7;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container form .customer-details{
+    padding: 25px 30px;
+    width: 100%;
+    border-radius: 35px;
+    background: #F5E7E7;
+    border: 5px solid #FF8732;
+    margin: 20px 0 12px 0;
+
+}
+
+form .customer-details .input-box{
+    margin-bottom: 15px;
+}
+
+.customer-details .input-box .form-details{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #D73515;
+    margin-right: 20px;
+}
+
+.customer-details .input-box input{
+    border: 2px solid #D73515;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: 300px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.customer-details .input-box input:focus,
+.customer-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+#menu{
+    border: 2px solid #D73515;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: 300px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+#servingtype{
+    border: 2px solid #D73515;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: 300px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+  
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #9b59b6;
+}
+
+form .button input:hover{
+    background: #744388;
+}
+  
+  
+
+  
+
+  
