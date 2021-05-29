@@ -1,51 +1,52 @@
 *{
     margin: 0px;
     padding: 0px;
-  }
-  
-  #header{
+}
+
+#header{
     background-color: #F5E7E7;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-  
-  }
-  
-  #logo{
+
+}
+
+#logo{
     position: absolute;
-    height: 12vh;
+    height: 10vh;
     left: 50%;
     right: 50%;
     top: 2px;
-  }
-  
-  #logoBawah{
+}
+
+#logoBawah{
     width: 10vh;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     overflow: hidden;
     background-color: #F5E7E7;
     font-family: Arial;
-  }
+    width: 15vw;
+}
     
-  .navbar a {
+.navbar a {
     float: left;
     font-size: 16px;
     color: #FF8732;
     text-align: center;
     padding: 14px 8px;
     text-decoration: none;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     float: left;
     overflow: hidden;
-    width: 28ch;
-  }
-  
-  .dropdown .dropbtn {
+    width: 25ch;
+}
+
+.dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
@@ -54,17 +55,17 @@
     background-color: inherit;
     font-family: inherit; 
     margin: 0; 
-  }
-  
-  #arrow{
+}
+
+#arrow{
     width: 5%;
-  }
-  
-  .navbar a:hover, .dropdown:hover {
+}
+
+.navbar a:hover, .dropdown:hover {
     background-color: whitesmoke;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -72,50 +73,47 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     align-items: flex-end;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     float: none;
     color: #FF8732;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     background-color: #F5E7E7;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  #footer{
-    
+}
+
+#footer{
     background-color: #F5E7E7;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #footer>h3{
+}
+#footer>h3{
     color: #FF8732;
-  }
-  
-  #footer>a>img{
+}
+
+#footer>a>img{
     margin: 10px;
-  }
-  
-  .sosmed{
-    width: 28ch;
-  }
+    width: 5ch;
+}
+
 
 #backgroundtengah{
     background-color: #D73515;
     color: white;
     justify-content: center;
-    border: 50px;
-    padding: 50px;
+    border: 10px;
+    padding: 10px;
     
 }
 #tulisanGallery{
@@ -124,7 +122,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 #backgroundGambar{
@@ -133,14 +130,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0px;
+    
+}
+
+#beefroyal{
+    height: 225px;
 }
 
 .Gambar{
-padding: 25px;
-margin: 25px;
-width: 609;
-height: 641;
+    padding: 25px;
+    margin: 25px;
+    width: 648px;
+    height: 670px;
+    align-content: center;
+    justify-content: center;
 
 }
 .Gambar>img{
@@ -150,8 +153,8 @@ height: 641;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 350px;
-    width: 400px;
+    height:45vh;
+    /* width: 25vw; */
 }
 
 .Nama{
