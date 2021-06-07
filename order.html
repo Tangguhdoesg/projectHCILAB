@@ -30,27 +30,27 @@
 
     <section class="container">
         <div class="title">Order Form</div>
-        <form action="#">
+        <form action="#" id="formOrder">
             <div class="customer-details">
                 <div class="input-box">
                     <span class="form-details">Name</span>
-                    <input type="text" placeholder="Enter your name" required>
+                    <input type="text" placeholder="Enter your name" id="nameID" name="name" >
                 </div>
                 <div class="input-box">
                     <span class="form-details">Email Address</span>
-                    <input type="text" placeholder="Enter your email address" required>
+                    <input type="text" placeholder="Enter your email address" id="emailID" name="email">
                 </div>
                 <div class="input-box">
                     <span class="form-details">Phone Number</span>
-                    <input type="text" placeholder="Enter your phone number" required>
+                    <input type="text" placeholder="Enter your phone number" id="phoneID" name="phone">
                 </div>
                 <div class="input-box">
                     <span class="form-details">Address</span>
-                    <input type="text" placeholder="Enter your address" required>
+                    <input type="text" placeholder="Enter your address" id="addressID" name="address">
                 </div>
                 <div class="input-box">
                     <label for="menu" class="form-details">Menu</label>
-                    <select name="menu" id="menu">
+                    <select id="menuID" name="menu">
                         <option value="select">Please select..</option>
                         <option value="burgerbesar">Burger Besar</option>
                         <option value="burgersedang">Burger Sedang</option>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="input-box">
                     <label for="servingtype" class="form-details">Serving Type</label>
-                    <select name="servingtype" id="servingtype">
+                    <select id="servingTypeID" name="servingType">
                         <option value="select">Please select..</option>
                         <option value="dinein">Dine In</option>
                         <option value="takeaway">Take Away</option>
@@ -70,6 +70,10 @@
                 <input type="submit" value="Submit">
             </div>
         </form>
+        <div id="errorLog" style="color: white; font-weight: bold;">
+
+        </div>
+
     </section>
 
     <section id="footer">
