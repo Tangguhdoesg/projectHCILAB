@@ -171,7 +171,7 @@ form .customer-details .input-box{
     border-color: #9b59b6;
 }
 
-#menu{
+#menuID{
     border: 2px solid #D73515;
     box-sizing: border-box;
     outline: none;
@@ -185,7 +185,7 @@ form .customer-details .input-box{
     transition: all 0.3s ease;
 }
 
-#servingtype{
+#servingTypeID{
     border: 2px solid #D73515;
     box-sizing: border-box;
     outline: none;
@@ -201,7 +201,7 @@ form .customer-details .input-box{
 
 form .button{
     height: 45px;
-    margin: 45px 0;
+    margin: 20px 0;
 }
 
 form .button input{
@@ -221,6 +221,11 @@ form .button input:hover{
     background: #744388;
 }
 
+#errorLog{
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 
 
