@@ -109,7 +109,7 @@
 
 .container{
     display: flex;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     background: #D73515;
     flex-direction: column;
@@ -166,10 +166,10 @@ form .customer-details .input-box{
     transition: all 0.3s ease;
 }
 
-.customer-details .input-box input:focus,
+/* .customer-details .input-box input:focus,
 .customer-details .input-box input:valid{
     border-color: #9b59b6;
-}
+} */
 
 #menuID{
     border: 2px solid #D73515;
