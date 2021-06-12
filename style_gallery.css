@@ -9,7 +9,6 @@
     justify-content: space-between;
     align-items: center;
     height: 13vh;
-
 }
 
 #logo{
@@ -134,27 +133,17 @@
     
 }
 
-#beefroyal{
-    height: 225px;
-}
-
 .Gambar{
-    padding: 25px;
-    margin: 25px;
-    width: 648px;
-    height: 670px;
+    padding: 30px;
+    margin: auto;
     align-content: center;
     justify-content: center;
 
 }
 .Gambar>img{
-    padding: 40px;
-    margin: 40px;
-    border: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:45vh;
+    padding: 30px;
+    margin: 30px;
+    border: 30px;
     /* width: 25vw; */
 }
 
@@ -166,4 +155,12 @@
     color: #D73515;
 }
 
+@media screen and (max-width: 700px){
+    #backgroundtengah {
+        width: 700px;
+        /* display: grid; */
+        /* justify-content: baseline; */
+    }
+
+}
 
