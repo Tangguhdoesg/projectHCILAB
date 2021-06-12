@@ -11,7 +11,7 @@ let items = [
     {id : 10, nama : "Hawaiian Chicken", harga : 100000}
 ]
 
-
+// const ORDER_STORAGE = "ORDER_STORAGE";
 
 function setErrorLog(text){
     let errorLog = document.getElementById("errorLog");
@@ -70,8 +70,7 @@ function registerSubmit(e){
         return;
     }
 
-    console.log(menu);
-    console.log(servingType);
+    // localStorage.setItem(ORDER_STORAGE, );
 
     let tableBody = document.getElementById("tableBody");
     tableBody.innerHTML += `
@@ -85,6 +84,10 @@ function registerSubmit(e){
         <td><button onclick="deleteData(this)">Delete</button></td>
     </tr>
     `
+    setErrorLog("");
+    
+    form.reset();
+
 }
 
 window.onload = function(){

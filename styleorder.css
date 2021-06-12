@@ -166,6 +166,25 @@ form .customer-details .input-box{
     transition: all 0.3s ease;
 }
 
+#nameID{
+    margin-left: 130px;
+}
+#emailID{
+    margin-left: 10px;
+}
+#phoneID{
+    margin-left: 2px;
+}
+#addressID{
+    margin-left: 97px;
+}
+#menuID{
+    margin-left: 127px;
+}
+#servingTypeID{
+    margin-left: 28px;
+}
+
 /* .customer-details .input-box input:focus,
 .customer-details .input-box input:valid{
     border-color: #9b59b6;
@@ -227,6 +246,18 @@ form .button input:hover{
     font-weight: 500;
 }
 
+div table thead tr th{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+div table tbody tr td{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
 
 
 
