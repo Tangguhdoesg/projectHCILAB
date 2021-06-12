@@ -11,15 +11,23 @@ let items = [
     {id : 10, nama : "Hawaiian Chicken", harga : 100000}
 ]
 
+// const ORDER_STORAGE = "ORDER_STORAGE";
+
 function setErrorLog(text){
     let errorLog = document.getElementById("errorLog");
     errorLog.innerHTML = text;
     return;
 }
 
+function deleteData(node){
+    if(confirm("Are you sure?")){
+     node.parentNode.parentNode.remove();
+    }
+ }
 
 function registerSubmit(e){
     e.preventDefault();
+    let pleaseSelect = "select"
     let form = e.target;
     let name = form.elements["name"].value;
     let email = form.elements["email"].value;
@@ -52,17 +60,34 @@ function registerSubmit(e){
         return;
     }
 
-    if(menu === "Please select.."){
+    if(menu == pleaseSelect){
         setErrorLog("Please choose the menu");
         return;
     }
 
-    if(servingType === "Please select.."){
+    if(servingType === pleaseSelect){
         setErrorLog("Please choose the serving type");
         return;
     }
 
-    console.log(email);
+    // localStorage.setItem(ORDER_STORAGE, );
+
+    let tableBody = document.getElementById("tableBody");
+    tableBody.innerHTML += `
+    <tr>
+        <td>${name}</td>
+        <td>${email}</td>
+        <td>${phone}</td>
+        <td>${address}</td>
+        <td>${menu}</td>
+        <td>${servingType}</td>
+        <td><button onclick="deleteData(this)">Delete</button></td>
+    </tr>
+    `
+    setErrorLog("");
+    
+    form.reset();
+
 }
 
 window.onload = function(){
