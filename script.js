@@ -1,10 +1,4 @@
-$('document').ready(function(){
-    alert("Ready");
-})
-
-window.onload = function() {
-    alert('Ready')
-}
+$('document').ready(main)
 
 let items = [
     {id : 1, nama : "SteakHouse Meal", harga : 100000},
@@ -18,6 +12,10 @@ let items = [
     {id : 9, nama : "Big King", harga : 95000},
     {id : 10, nama : "Hawaiian Chicken", harga : 100000}
 ]
+
+function main() {
+
+}
 
 
 
