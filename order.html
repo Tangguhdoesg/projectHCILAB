@@ -29,26 +29,26 @@
       </section>
 
     <section class="container">
-        <div class="title">Order Form</div>
+        <div class="title">Please fill out this form first!</div>
         <form action="#" id="formOrder">
             <div class="customer-details">
                 <div class="input-box">
-                    <span class="form-details">Name</span>
+                    <span class="form-details" id="nameDetails">Name</span>
                     <input type="text" placeholder="Enter your name" id="nameID" name="name" >
                 </div>
                 <div class="input-box">
-                    <span class="form-details">Email Address</span>
+                    <span class="form-details" id="emailDetails">Email Address</span>
                     <input type="text" placeholder="Enter your email address" id="emailID" name="email">
                 </div>
                 <div class="input-box">
-                    <span class="form-details">Phone Number</span>
+                    <span class="form-details" id="phoneDetails">Phone Number</span>
                     <input type="text" placeholder="Enter your phone number" id="phoneID" name="phone">
                 </div>
                 <div class="input-box">
-                    <span class="form-details">Address</span>
+                    <span class="form-details" id="addressDetails">Address</span>
                     <input type="text" placeholder="Enter your address" id="addressID" name="address">
                 </div>
-                <div class="input-box">
+                <!-- <div class="input-box">
                     <label for="menu" class="form-details">Menu</label>
                     <select id="menuID" name="menu">
                         <option value="select">Please select..</option>
@@ -64,17 +64,19 @@
                         <option value="Dine In">Dine In</option>
                         <option value="Take Away">Take Away</option>
                     </select>
+                </div> -->
+                
+                <div class="button"> 
+                    <input type="submit" value="Next">
+                </div>
+
+                <div id="errorLog">
+        
                 </div>
             </div>
-            <div class="button">
-                <input type="submit" value="Submit">
-            </div>
         </form>
-        <div id="errorLog" style="color: white; font-weight: bold;">
 
-        </div>
-
-        <div>
+        <!-- <div>
             <table>
                 <thead>
                     <tr>
@@ -90,7 +92,7 @@
                     
                 </tbody>
             </table>
-        </div>
+        </div> -->
     
 
     </section>

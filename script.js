@@ -33,8 +33,8 @@ function registerSubmit(e){
     let email = form.elements["email"].value;
     let phone = form.elements["phone"].value;
     let address = form.elements["address"].value;
-    let menu = form.elements["menu"].value;
-    let servingType = form.elements["servingType"].value;
+    // let menu = form.elements["menu"].value;
+    // let servingType = form.elements["servingType"].value;
 
     if(name === ""){
         setErrorLog("Name cannot be empty!");
@@ -60,30 +60,30 @@ function registerSubmit(e){
         return;
     }
 
-    if(menu == pleaseSelect){
-        setErrorLog("Please choose the menu");
-        return;
-    }
+    // if(menu == pleaseSelect){
+    //     setErrorLog("Please choose the menu");
+    //     return;
+    // }
 
-    if(servingType === pleaseSelect){
-        setErrorLog("Please choose the serving type");
-        return;
-    }
+    // if(servingType === pleaseSelect){
+    //     setErrorLog("Please choose the serving type");
+    //     return;
+    // }
 
     // localStorage.setItem(ORDER_STORAGE, );
 
-    let tableBody = document.getElementById("tableBody");
-    tableBody.innerHTML += `
-    <tr>
-        <td>${name}</td>
-        <td>${email}</td>
-        <td>${phone}</td>
-        <td>${address}</td>
-        <td>${menu}</td>
-        <td>${servingType}</td>
-        <td><button onclick="deleteData(this)">Delete</button></td>
-    </tr>
-    `
+    // let tableBody = document.getElementById("tableBody");
+    // tableBody.innerHTML += `
+    // <tr>
+    //     <td>${name}</td>
+    //     <td>${email}</td>
+    //     <td>${phone}</td>
+    //     <td>${address}</td>
+    //     <td>${menu}</td>
+    //     <td>${servingType}</td>
+    //     <td><button onclick="deleteData(this)">Delete</button></td>
+    // </tr>
+    // `
     setErrorLog("");
     
     form.reset();
