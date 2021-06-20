@@ -109,8 +109,7 @@
 
 .container{
     display: flex;
-    height: 150vh;
-    width: 100%;
+    height: 100vh;
     background: #D73515;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +120,7 @@
 
 .container .title{
     padding: 25px 30px;
+    margin-left: 35px;
     border-radius: 5px;
     font-weight: 800;
     font-size: 50px;
@@ -130,8 +130,10 @@
 }
 
 .container form .customer-details{
-    padding: 25px 30px;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 150px 60px 150px;
     border-radius: 35px;
     background: #F5E7E7;
     border: 5px solid #FF8732;
@@ -166,31 +168,46 @@ form .customer-details .input-box{
     transition: all 0.3s ease;
 }
 
+#nameDetails{
+    margin-left: 136px;
+}
 #nameID{
-    margin-left: 130px;
+    margin-left: 4px;
+}
+
+#emailDetails{
+    margin-left: 18px;
 }
 #emailID{
+    margin-left: 2px;
+}
+
+#phoneDetails{
     margin-left: 10px;
 }
 #phoneID{
     margin-left: 2px;
 }
-#addressID{
-    margin-left: 97px;
+
+#addressDetails{
+    margin-left: 104px;
 }
-#menuID{
+#addressID{
+    margin-left: 3px;
+}
+/* #menuID{
     margin-left: 127px;
 }
 #servingTypeID{
     margin-left: 28px;
-}
+} */
 
 /* .customer-details .input-box input:focus,
 .customer-details .input-box input:valid{
     border-color: #9b59b6;
 } */
 
-#menuID{
+/* #menuID{
     border: 2px solid #D73515;
     box-sizing: border-box;
     outline: none;
@@ -216,48 +233,54 @@ form .customer-details .input-box{
     width: 300px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
-}
+} */
 
 form .button{
     height: 45px;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 form .button input{
     height: 100%;
-    width: 100%;
+    width: 30%;
     outline: none;
     color: #fff;
     border: none;
     font-size: 18px;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 15px;
     letter-spacing: 1px;
-    background: #9b59b6;
+    background: #FF8732;
 }
 
 form .button input:hover{
-    background: #744388;
+    background: #ff7d20;
 }
 
 #errorLog{
-    margin-bottom: 50px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
-div table thead tr th{
+/* div table thead tr th{
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} */
 
 
-div table tbody tr td{
+/* div table tbody tr td{
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} */
 
 
 
