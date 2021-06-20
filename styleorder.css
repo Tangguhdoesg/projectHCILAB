@@ -257,6 +257,7 @@ form .button input{
 
 form .button input:hover{
     background: #ff7d20;
+    cursor: pointer;
 }
 
 #errorLog{
