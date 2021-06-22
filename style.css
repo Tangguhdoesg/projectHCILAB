@@ -175,6 +175,7 @@
 /* Section 3 */
 .section3 {
   background-color: #F5E7E7;
+  position: relative;
 }
 
 .section3 h1 {
@@ -184,7 +185,6 @@
 .slider-container {
   width: 30%;
   margin: auto;
-  position: relative;
 }
 
 .item-slider {
@@ -202,6 +202,7 @@
 .prev {
   position: absolute;
   top: 50%;
+  left: 300px;
   font-size: 25px;
   cursor: pointer;
 }
@@ -210,7 +211,7 @@
   position: absolute;
   top: 50%;
   font-size: 25px;
-  right: 0;
+  right: 300px;
   cursor: pointer;
 }
 
