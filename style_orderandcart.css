@@ -231,3 +231,8 @@
     letter-spacing: 1px;
     background: #D73515;
 }
+
+.button input:hover{
+    cursor:pointer
+}
+
