@@ -13,9 +13,27 @@ let items = [
     {id : 10, nama : "Hawaiian Chicken", harga : 100000}
 ]
 
-function main() {
+function main(){
+    let maxIndex = $('.item-slider').length
+    let index = 0
+    sliding(index)
+    $('.prev').click(() => {
+        if(index > 0){
+            sliding(--index)
+        }
+    })
 
+    $('.next').click(() => {
+        if(index < maxIndex-1){
+            sliding(++index)
+        }
+    })
 }
 
-
-
+function sliding(index) {
+    const itemSlider = $('.item-slider') 
+    itemSlider.each((i)=>{
+        $(itemSlider[i]).hide()
+    })
+    $(itemSlider[index]).show()
+}
