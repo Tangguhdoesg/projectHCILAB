@@ -175,6 +175,44 @@
 /* Section 3 */
 .section3 {
   background-color: #F5E7E7;
+  position: relative;
+}
+
+.section3 h1 {
+  text-align: center;
+}
+
+.slider-container {
+  width: 30%;
+  margin: auto;
+}
+
+.item-slider {
+  width: 100%;
+}
+
+.item-slider img {
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  margin-left: 20px;
+  right: 0;
+
 }
 
 /* footer */
