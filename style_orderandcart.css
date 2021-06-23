@@ -138,8 +138,8 @@
     margin: auto;
     align-content: center;
     justify-content: center;
-}
 
+}
 .Gambar>img{
     padding: 30px;
     margin: 30px;
@@ -165,7 +165,6 @@
     }
     .Gambar{
         background-color: #F5E7E7;
-        padding-top: 0px;
         
     }
     .navbar{
@@ -173,5 +172,67 @@
     }
    
 
+}
+/* .input-box{
+    margin-bottom: 15px;
+}
+
+.input-box{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #D73515;
+    margin-right: 20px;
+} */
+
+/* .input-box {
+    border: 2px solid #D73515;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: 300px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+} */
+
+#servingTypeID{
+    border: 2px solid #D73515;
+    background-color: F5E7E7;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: 300px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.button{
+    height: 45px;
+    margin: 20px 0;
+}
+
+.button input{
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #D73515;
+}
+
+.button input:hover{
+    cursor:pointer
 }
 

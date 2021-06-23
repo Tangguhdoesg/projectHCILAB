@@ -120,11 +120,11 @@
     padding-bottom: 0px;
 }
 
-.row{
+/* .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .fotonya{
     width: 300px;
@@ -133,4 +133,28 @@
 .foto{
     padding: 150px;
     padding-top: 50px;
+}
+
+#backgroundFoto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px){
+    #backgroundFoto{
+        display: initial;
+        background-color: #FF8732;
+        margin: 20px;  
+    }
+    .foto{
+        background-color: #D73515;
+        padding-top: 0px;
+        
+    }
+    .navbar{
+        margin-right: 20px;
+    }
+   
+
 }

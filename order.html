@@ -29,47 +29,72 @@
       </section>
 
     <section class="container">
-        <div class="title">Order Form</div>
-        <form action="#">
+        <div class="title">Please fill out this form first!</div>
+        <form action="#" id="formOrder">
             <div class="customer-details">
                 <div class="input-box">
-                    <span class="form-details">Name</span>
-                    <input type="text" placeholder="Enter your name" required>
+                    <span class="form-details" id="nameDetails">Name</span>
+                    <input type="text" placeholder="Enter your name" id="nameID" name="name" >
                 </div>
                 <div class="input-box">
-                    <span class="form-details">Email Address</span>
-                    <input type="text" placeholder="Enter your email address" required>
+                    <span class="form-details" id="emailDetails">Email Address</span>
+                    <input type="text" placeholder="Enter your email address" id="emailID" name="email">
                 </div>
                 <div class="input-box">
-                    <span class="form-details">Phone Number</span>
-                    <input type="text" placeholder="Enter your phone number" required>
+                    <span class="form-details" id="phoneDetails">Phone Number</span>
+                    <input type="text" placeholder="Enter your phone number" id="phoneID" name="phone">
                 </div>
                 <div class="input-box">
-                    <span class="form-details">Address</span>
-                    <input type="text" placeholder="Enter your address" required>
+                    <span class="form-details" id="addressDetails">Address</span>
+                    <input type="text" placeholder="Enter your address" id="addressID" name="address">
                 </div>
-                <div class="input-box">
+                <!-- <div class="input-box">
                     <label for="menu" class="form-details">Menu</label>
-                    <select name="menu" id="menu">
+                    <select id="menuID" name="menu">
                         <option value="select">Please select..</option>
-                        <option value="burgerbesar">Burger Besar</option>
-                        <option value="burgersedang">Burger Sedang</option>
-                        <option value="burgerkecil">Burger Kecil</option>
+                        <option value="Burger Besar">Burger Besar</option>
+                        <option value="Burger Sedang">Burger Sedang</option>
+                        <option value="Burger Kecil">Burger Kecil</option>
                     </select>
                 </div>
                 <div class="input-box">
                     <label for="servingtype" class="form-details">Serving Type</label>
-                    <select name="servingtype" id="servingtype">
+                    <select id="servingTypeID" name="servingType">
                         <option value="select">Please select..</option>
-                        <option value="dinein">Dine In</option>
-                        <option value="takeaway">Take Away</option>
+                        <option value="Dine In">Dine In</option>
+                        <option value="Take Away">Take Away</option>
                     </select>
+                </div> -->
+                <div class="button"> 
+                    <input type="submit" value="Next">
+                    <a href="OrderandCart.html">THIS</a>
+                </div>
+
+                <div id="errorLog">
+        
                 </div>
             </div>
-            <div class="button">
-                <input type="submit" value="Submit">
-            </div>
         </form>
+
+        <!-- <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Menu</th>
+                        <th>Serving Type</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+        </div> -->
+    
+
     </section>
 
     <section id="footer">
