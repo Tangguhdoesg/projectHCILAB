@@ -8,16 +8,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 13vh;
 
+  width: 100%;
+  top: 0;
+  z-index: 100000;
 }
 
 #logo{
-  position: absolute;
-  height: 12vh;
-  left: 50%;
-  right: 50%;
-  top: 2px;
+  height: 8vh;
+  margin-left: 16px;
 }
 
 #logoBawah{
@@ -114,7 +113,6 @@
 
 #container-section1 {
   background-color: #F5E7E7;
-  color: black;
   height: 65vh;
   margin-top: 36px;
   margin-bottom: 50px;
@@ -151,6 +149,74 @@
   padding: 40px;
 }
 
+#title-section2 {
+  text-decoration: underline;
+  color: #D73515;
+  font-size: 50px;
+}
+
+.container-section2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+}
+
+.content img {
+  height: 50vh;
+}
+
+.content-item {
+  padding: 0px 50px;
+}
+
+/* Section 3 */
+.section3 {
+  background-color: #F5E7E7;
+  position: relative;
+}
+
+.section3 h1 {
+  text-align: center;
+}
+
+.slider-container {
+  width: 30%;
+  margin: auto;
+}
+
+.item-slider {
+  width: 100%;
+}
+
+.item-slider img {
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 300px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  right: 300px;
+  cursor: pointer;
+}
+
+/* footer */
 #footer{
   background-color: #F5E7E7;
   display: flex;
