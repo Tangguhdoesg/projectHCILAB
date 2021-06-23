@@ -61,6 +61,7 @@ function sliding(index) {
         $(itemSlider[i]).hide()
     })
     $(itemSlider[index]).show()
+}
 
 // const ORDER_STORAGE = "ORDER_STORAGE";
 
