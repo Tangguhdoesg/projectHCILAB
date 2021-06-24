@@ -177,12 +177,15 @@
 .section3 {
   background-color: #F5E7E7;
   position: relative;
+  padding-bottom: 36px;
 }
 
 .section3 h1 {
   text-align: center;
+  margin-bottom: 36px;
 }
 
+/* Slider Pakai Div */
 .slider-container {
   width: 30%;
   margin: auto;
@@ -194,10 +197,6 @@
 
 .item-slider img {
   width: 100%;
-}
-
-.none {
-  display: none;
 }
 
 .prev {
@@ -216,6 +215,121 @@
   cursor: pointer;
 }
 
+/* Slider Pakai Unordered List  */
+.slider {
+  width: 650px;
+  height: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  height: 650px;
+  width: 600%;
+  /* list-style: none;
+  margin: 0;
+  padding: 0; */
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  /* float: left; */
+  /* width: 20%; Perlu diubah */
+  transition: 2s;
+}
+
+.slide img{
+  height: 650px;
+  width: 650px;
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 650px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: black;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -650px;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -1300px;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -1950px;
+}
+
+#radio5:checked ~ .first{
+  margin-left: -2600px;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 650px;
+  justify-content: center;
+  margin-top: 610px;
+}
+
+.navigation-auto div{
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: black;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: black;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: black;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: black;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background: black;
+}
+
 /* footer */
 #footer{
   background-color: #F5E7E7;
@@ -223,6 +337,7 @@
   justify-content: center;
   align-items: center;
 }
+
 #footer>h3{
   color: #FF8732;
 }
