@@ -10,7 +10,7 @@ window.onload = () =>{
     let boxW = 150;
     let boxH = 150
     let canvasHeight = 700
-    let canvasWidht = 1000
+    let canvasWidht = 1300
     let vx = 1
     let vy = 1
     img.onload = () =>{}
@@ -37,11 +37,13 @@ window.onload = () =>{
     
         function show_screensaver(){
             $('#screensaver').fadeIn();
+            $('#tengah').fadeOut()
             screensaver_active = true;
             screensaver_animation();
         }
         function stop_screensaver(){
             $('#screensaver').fadeOut();
+            $('#tengah').fadeIn()
             screensaver_active = false;
         }
     
@@ -59,7 +61,10 @@ window.onload = () =>{
     
         $(document).mousemove(function(){
             clearTimeout(mousetimeout); 
-    
+            
+            if (screensaver_active) {
+                stop_screensaver();
+            }
             mousetimeout = setTimeout(function(){
                 show_screensaver();
             }, 1000 * idletime); // 5 secs			

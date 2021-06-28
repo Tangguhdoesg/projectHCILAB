@@ -107,7 +107,7 @@
 }
 
 
-#backgroundtengah{
+#tengah{
     background-color: #D73515;
     color: white;
     justify-content: center;
@@ -154,6 +154,16 @@
 
 .Harga{
     color: #D73515;
+}
+
+#screensaver{
+    position: absolute; 
+    left:0px; 
+    top: 0px;
+    width: 100%; 
+    height:100%;
+    display: none;
+    background-color: #F5E7E7;
 }
 
 @media screen and (max-width: 700px){
