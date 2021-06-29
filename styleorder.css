@@ -197,10 +197,10 @@ form .customer-details .input-box{
 }
 /* #menuID{
     margin-left: 127px;
-}
+} */
 #servingTypeID{
     margin-left: 28px;
-} */
+}
 
 /* .customer-details .input-box input:focus,
 .customer-details .input-box input:valid{
@@ -219,7 +219,7 @@ form .customer-details .input-box{
     width: 300px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
-}
+} */
 
 #servingTypeID{
     border: 2px solid #D73515;
@@ -233,6 +233,13 @@ form .customer-details .input-box{
     width: 300px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
+}
+
+/* form a{
+    height: 45px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
 } */
 
 form .button{
@@ -245,6 +252,7 @@ form .button{
 form .button input{
     height: 100%;
     width: 30%;
+    /* margin-right: 100px; */
     outline: none;
     color: #fff;
     border: none;
