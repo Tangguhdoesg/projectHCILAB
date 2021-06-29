@@ -1,6 +1,5 @@
 const DATA_KEY = "DATA_STORAGE";
 const CART_KEY = "CART_STORAGE";
-const FINAL_KEY = "ORDER_STORAGE";
 
 let items = [
     {id : 1, nama : "SteakHouse Meal", harga : 100000},
@@ -28,11 +27,13 @@ function setLocalStorage(key, value){
 function getLocalStorage(key){
     return JSON.parse(localStorage.getItem(key));
 }
+let total = 0
 
 function initCart(){
     const cartList = $('#cartList');
     cartList.empty();
     const local = getLocalStorage(CART_KEY)
+    total = 0
     local.forEach(key =>{
         cartList.append(
             `
@@ -41,15 +42,19 @@ function initCart(){
                     <button onClick=increaseItem(${key.id})>+</button>
                     <button onClick=decreaseItem(${key.id})>-</button>
                 </td>
-                <td>${key.id}</td>
+                <td>${key.jumlah}x</td>
                 <td>${key.nama}</td>
                 <td>${key.harga}</td> 
-                <td>${key.jumlah}</td>
             </tr>
             `
         )
+        total += key.jumlah*key.harga
     })
-    
+    document.getElementById("total").innerHTML = "Rp " + total + ",-"
+}
+
+function docWrite(variable) {
+    document.write(variable);
 }
 
 function increaseItem(id){
@@ -99,8 +104,9 @@ function decreaseItem(id){
 
 function submitOrder(){
     const localDATA = getLocalStorage(DATA_KEY)
-    const localCART = getLocalStorage(CART_KEY)
-    const localORDER = [localDATA,localCART];
-    setLocalStorage(FINAL_KEY,localORDER);
-
+    // const localCART = getLocalStorage(CART_KEY)
+    localStorage.removeItem(DATA_KEY)
+    localStorage.removeItem(CART_KEY)
+    alert("Order by " + localDATA.name + " has been completed !")
+    initCart()
 }
