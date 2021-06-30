@@ -38,20 +38,32 @@ function initCart(){
         cartList.append(
             `
             <tr>
-                <td>
-                    <button onClick=increaseItem(${key.id})>+</button>
-                    <button onClick=decreaseItem(${key.id})>-</button>
+                <td class="cartButton">
+                    <button class="buttonCart" onClick=increaseItem(${key.id})>+</button>
+                    <button class="buttonCart" onClick=decreaseItem(${key.id})>-</button>
                 </td>
-                <td>${key.jumlah}x</td>
-                <td>${key.nama}</td>
-                <td>${key.harga}</td> 
-            </tr>
+                <td class="cartDetails">${key.jumlah}x</td>
+                <td class="cartDetails">${key.nama}</td>
+                <td class="cartDetails">Rp ${key.harga},-</td> 
+            </tr> 
             `
         )
         total += key.jumlah*key.harga
     })
     document.getElementById("total").innerHTML = "Rp " + total + ",-"
 }
+
+    
+
+/* <div class = "table">
+                <button class="buttonCart" onClick=increaseItem(${key.id})>+</button>
+                <button class="buttonCart" onClick=decreaseItem(${key.id})>-</button>
+                <div class ="cartClass">
+                    <h3 class = "cartDetails" id="jumlah">${key.jumlah}</h3>
+                    <h3 class = "cartDetails" id="nama">${key.nama}</h3>
+                    <h3 class = "cartDetails" id="harga">${key.harga}</h3>
+                </div>
+</div> */
 
 function docWrite(variable) {
     document.write(variable);

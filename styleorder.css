@@ -195,13 +195,18 @@ form .customer-details .input-box{
 #addressID{
     margin-left: 3px;
 }
+
+#servingDetails{
+    margin-left: 32px;
+}
+
+#servingTypeID{
+    margin-left: 8px;
+}
+
 /* #menuID{
     margin-left: 127px;
 } */
-#servingTypeID{
-    margin-left: 28px;
-}
-
 /* .customer-details .input-box input:focus,
 .customer-details .input-box input:valid{
     border-color: #9b59b6;
@@ -291,6 +296,46 @@ form .button input:hover{
     color: white;
 } */
 
+@media screen and (max-width: 700px){
+    .navbar{
+        margin-right: 20px;
+    }
+    #nameDetails{
+        margin-left: 10px;
+    }
+    /* #nameID{
+        margin-left: 4px;
+    } */
+    
+    #emailDetails{
+        margin-left: 10px;
+    }
+    /* #emailID{
+        margin-left: 2px;
+    }
+     */
+    #phoneDetails{
+        margin-left: 10px;
+    }
+    /* #phoneID{
+        margin-left: 2px;
+    } */
+    
+    #addressDetails{
+        margin-left: 10px;
+    }
+    /* #addressID{
+        margin-left: 3px;
+    } */
+    
+    #servingDetails{
+        margin-left: 10px;
+    }
+    
+    /* #servingTypeID{
+        margin-left: 8px;
+    } */
 
+}
 
 
