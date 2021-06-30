@@ -119,6 +119,7 @@ function submitOrder(){
     // const localCART = getLocalStorage(CART_KEY)
     localStorage.removeItem(DATA_KEY)
     localStorage.removeItem(CART_KEY)
-    alert("Order by " + localDATA.name + " has been completed !")
-    initCart()
+    alert("Order by " + localDATA.name + " has been completed !");
+    document.location.href="index.html";
+    initCart();
 }
