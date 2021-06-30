@@ -10,7 +10,7 @@ window.onload = () =>{
     let boxW = 150;
     let boxH = 150
     let canvasHeight = 700
-    let canvasWidht = 1300
+    let canvasWidht = 1275
     let vx = 1
     let vy = 1
     img.onload = () =>{}

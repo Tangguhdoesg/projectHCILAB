@@ -167,6 +167,9 @@
 }
 
 @media screen and (max-width: 700px){
+    #header{
+        /* display: initial; */
+    }
     #backgroundGambar{
         display: initial;
         background-color: #F5E7E7;
@@ -179,9 +182,9 @@
         padding-top: 0px;
         
     }
-    .navbar{
+    /* .navbar{
         margin-right: 20px;
-    }
+    } */    
    
 
 }
