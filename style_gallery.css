@@ -167,9 +167,7 @@
 }
 
 @media screen and (max-width: 700px){
-    #header{
-        /* display: initial; */
-    }
+
     #backgroundGambar{
         display: initial;
         background-color: #F5E7E7;

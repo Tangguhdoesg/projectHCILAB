@@ -3,27 +3,30 @@ window.onload = () =>{
     let canvas = document.getElementById("canvas")
     let ctx = canvas.getContext("2d")
 
+    canvas.height = document.body.scrollHeight
+    canvas.width = document.body.scrollWidth
+
     let img = new Image()
     img.src = 'Assets/Logo.png'
     let x = 0
     let y = 0
     let boxW = 150;
     let boxH = 150
-    let canvasHeight = 700
-    let canvasWidht = 1275
+    let canvasHeight = canvas.height
+    let canvasWidht = canvas.width
     let vx = 1
     let vy = 1
-    img.onload = () =>{}
+    img.onload = () =>{};
     function render(){
         ctx.clearRect(0,0,canvasWidht,canvasHeight)
         ctx.drawImage(img,x,y,boxW,boxH)
         x+=vx
         y+=vy
         
-        if(x+boxW>=canvasWidht || x<=0){
+        if(x+boxW>=window.innerWidth || x<=0){
             vx*=-1
         }
-        if (y+boxH>= canvasHeight || y<=0){
+        if (y+boxH>= window.innerHeight || y<=0){
             vy*=-1
         }
     
