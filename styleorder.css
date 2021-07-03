@@ -288,6 +288,16 @@ form .button input:hover{
     margin: 0px;
 }
 
+#screensaver{
+    position: absolute; 
+    left:0px; 
+    top: 0px;
+    width: 100%; 
+    height: 100%;
+    display: none;
+    background-color: #F5E7E7;
+  }
+
 /* div table thead tr th{
     padding-left: 20px;
     padding-bottom: 10px;
