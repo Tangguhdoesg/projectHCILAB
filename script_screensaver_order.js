@@ -42,7 +42,6 @@ window.onload = () =>{
             $('#tengah').fadeOut()
             $('#header').fadeOut()
             $('#footer').fadeOut()
-            $('#backgroundtengah').fadeOut()
             screensaver_active = true;
             screensaver_animation();
         }
@@ -51,8 +50,17 @@ window.onload = () =>{
             $('#tengah').fadeIn()
             $('#header').fadeIn()
             $('#footer').fadeIn()
-            $('#backgroundtengah').fadeIn()
             screensaver_active = false;
+        }
+        document.getElementById('nameID').onkeypress= function(){
+            clearTimeout(mousetimeout);
+            if (screensaver_active) {
+                stop_screensaver();
+            }
+    
+            mousetimeout = setTimeout(function(){
+                show_screensaver();
+            }, 500 * idletime); 
         }
     
         $(document).click(function(){
@@ -82,7 +90,46 @@ window.onload = () =>{
                 requestAnimationFrame(render)
             }
         }
-        // $(document).
+        document.getElementById('nameID').onkeypress= function(){
+            clearTimeout(mousetimeout);
+            if (screensaver_active) {
+                stop_screensaver();
+            }
+    
+            mousetimeout = setTimeout(function(){
+                show_screensaver();
+            }, 500 * idletime); 
+        }
+        document.getElementById('emailID').onkeypress= function(){
+            clearTimeout(mousetimeout);
+            if (screensaver_active) {
+                stop_screensaver();
+            }
+    
+            mousetimeout = setTimeout(function(){
+                show_screensaver();
+            }, 500 * idletime); 
+        }
+        document.getElementById('phoneID').onkeypress= function(){
+            clearTimeout(mousetimeout);
+            if (screensaver_active) {
+                stop_screensaver();
+            }
+    
+            mousetimeout = setTimeout(function(){
+                show_screensaver();
+            }, 500 * idletime); 
+        }
+        document.getElementById('addressID').onkeypress= function(){
+            clearTimeout(mousetimeout);
+            if (screensaver_active) {
+                stop_screensaver();
+            }
+    
+            mousetimeout = setTimeout(function(){
+                show_screensaver();
+            }, 500 * idletime); 
+        }
     }
     screensaver()
 }
