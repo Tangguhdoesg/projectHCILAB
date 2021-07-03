@@ -1,9 +1,6 @@
 $('document').ready(main)
 var counterSlide = 1;
 
-
-
-
 function main(){
     let maxIndex = $('.slide').length
     animationSlider()
