@@ -128,10 +128,6 @@
     border-color: #FF8732;
     border-style: solid;
     padding: 2rem 0rem;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
   }
 
   .input-box {
@@ -153,7 +149,7 @@
     color: #D73515;
   }
 
-  .input-box .form-answer {
+  .form-answer {
     flex: 2;
     text-align: left;
     box-sizing: border-box;
@@ -164,18 +160,19 @@
     color: #D73515;
     border: 2px solid #D73515;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 10px;
     height: 40px;
     width: 50%;
-
-    margin-right: 10rem;
-
 
     display: flex;
     align-items: center;
   }
 
-  .input-box select {
+  .section1a{
+    margin-right: 10rem;
+  }
+
+  .custom-select {
     appearance: none;
     background-color: transparent;
     border: none;
@@ -210,7 +207,6 @@
     column-gap: 5rem;
     margin-right: 10rem;
     padding: 5px 10px;
-    
   }
 
   .checkbox-container {
@@ -252,7 +248,7 @@
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a orange background */
 .checkbox-container input:checked ~ .checkmark {
   background-color: #D73515;
 }
@@ -279,12 +275,125 @@
   transform: rotate(45deg);
 }
 
-  /* select::after {
-    content: "";
-    width: 0.8em;
-    height: 0.5em;
-    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-  } */
+.create-burger-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  
+.create-burger-container h1 {
+  font-size: 50px;
+  font-family: var(--main-font);
+}
+
+.custom-burger{
+  /* margin: 0 auto;
+  height: auto; */
+  display: block;
+  margin-bottom: 140px;
+}
+
+.burger-ingredients {
+  display: block;
+  position: relative;
+  margin-bottom: -140px;
+}
+
+/* #top-bun{
+  z-index: 7;
+}
+
+#meat {
+  top: -100px;
+  z-index: 6;
+}
+
+#sauce-mushroom{
+  top: -230px;
+  z-index: 5;
+}
+
+#sauce-chili {
+  top: -410px;
+  z-index: 4;
+}
+
+#sauce-bbq{
+  top: -590px;
+  z-index: 3;
+}
+
+#sauce-cheese {
+  top: -770px;
+  z-index: 2;
+}
+
+#lettuce{
+  top: -950px;
+  z-index: 1;
+}
+
+#bottom-bun {
+  top: -1080px;
+} */
+
+.z-1{
+  z-index: 100!important;
+}
+
+.z-2{
+  z-index: 101!important;
+}
+.z-3{
+  z-index: 102!important;
+}
+.z-4{
+  z-index: 103!important;
+}
+.z-5{
+  z-index: 104!important;
+}
+.z-6{
+  z-index: 105!important;
+}
+.z-7{
+  z-index: 106!important;
+}
+
+.section1b {
+  margin-bottom: 1rem;
+}
+
+ .button{
+  border: none;
+  color: white;
+  background-color: #D73515;
+  display: block;
+  font-size: 1rem;
+  padding: 15px 32px;
+  border-radius: 15px;
+  width: 50%;
+}
+
+/* 
+.button input{
+  height: 100%;
+  width: 50%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: #D73515;
+}
+
+.button input:hover{
+  cursor:pointer
+} */
+
+
+
 
