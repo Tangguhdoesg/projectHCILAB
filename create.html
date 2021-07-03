@@ -32,81 +32,123 @@
     <section class="section1">
         <h1 id="title-section1">CREATE YOUR OWN BURGER</h1>
         <div class="container-section1">
-            <div class="input-box">
-                <h1 class="form-details">Bread</h1>
-                <div class="form-answer">
-                    <select name="bread" id="">
-                        <option value="0">Choose your desired bread...</option>
-                        <option value="1">Regular</option>
-                        <option value="2">Wheat Bread</option>
-                    </select>
-                    <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
-                </div>
-            </div>
-            <div class="input-box">
-                <h1 class="form-details">Meat</h1>
-                <div class="form-answer">
-                    <select name="meat" id="">
-                        <option value="0">Choose your desired meat...</option>
-                        <option value="1">Beef</option>
-                        <option value="2">Chicken</option>
-                        <option value="3">Fish</option>
-                    </select>
-                    <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
-                </div>
-            </div>
-            <div class="input-box">
-                <h1 class="form-details">Sauce</h1>
-                <div class="form-checkbox">
-                    <div>
-                        <label class="checkbox-container">
-                            <input type="checkbox" name="Mushroom" id="">
-                            <span class="checkmark"></span>
-                            Mushroom
-                        </label>
-                        <br>
-                        <label class="checkbox-container">
-                            <input type="checkbox" name="Chilli" id="">
-                            <span class="checkmark"></span>
-                            Chilli
-                        </label>
+            <div>
+                <div class="input-box">
+                    <h1 class="form-details">Bread</h1>
+                    <div class="form-answer section1a">
+                        <select name="bread" class="custom-select">
+                            <option value="1">Regular</option>
+                            <option value="2">Wheat Bread</option>
+                        </select>
+                        <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
                     </div>
-                    
-                    <div>
-                        <label class="checkbox-container">
-                            <input type="checkbox" name="Barbeque" id="">
-                            <span class="checkmark"></span>
-                            Barbeque
-                        </label>
-                        <br>
-                        <label class="checkbox-container">
-                            <input type="checkbox" name="Cheese" id="">
-                            <span class="checkmark"></span>
-                            Cheese
-                        </label>
+                </div>
+                <div class="input-box">
+                    <h1 class="form-details">Meat</h1>
+                    <div class="form-answer section1a">
+                        <select name="meat" class="custom-select">
+                            <option value="1">Beef</option>
+                            <option value="2">Chicken</option>
+                            <option value="3">Fish</option>
+                        </select>
+                        <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
                     </div>
-                    
+                </div>
+                <div class="input-box">
+                    <h1 class="form-details">Sauce</h1>
+                    <div class="form-checkbox">
+                        <div>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="Mushroom" id="">
+                                <span class="checkmark"></span>
+                                Mushroom
+                            </label>
+                            <br>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="Chilli" id="">
+                                <span class="checkmark"></span>
+                                Chilli
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="Barbeque" id="">
+                                <span class="checkmark"></span>
+                                Barbeque
+                            </label>
+                            <br>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="Cheese" id="">
+                                <span class="checkmark"></span>
+                                Cheese
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="input-box">
+                    <h1 class="form-details">Vegetable</h1>
+                    <div class="form-answer section1a">
+                        <select name="vegetable" class="custom-select">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                        <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <h1 class="form-details">Name It!</h1>
+                    <div class="form-answer section1a">
+                        <input type="text" placeholder="Please name your burger..." name="" id="text-field">
+                    </div>
                 </div>
             </div>
-            <div class="input-box">
-                <h1 class="form-details">Vegetable</h1>
-                <div class="form-answer">
-                    <select name="vegetable" id="">
-                        <option value="0">Add the vegetable?</option>
-                        <option value="1">Yes</option>
-                        <option value="2">No</option>
+
+            <div class="create-burger-container">
+                <h1>This is how your burger looks like.</h1>
+                <div class="container-burger">
+                    <div class="content-burger" id="top-bun">
+                        <img src="Assets/Create Burger/regular bun top.png" alt="">
+                    </div>
+                    <div class="content-burger" id="meat">
+                        <img src="Assets/Create Burger/fish patty.png" alt="">
+                    </div>
+                    <div class="content-burger" id="sauce-mushroom">
+                        <img src="Assets/Create Burger/mushroom sauce.png" alt="">
+                    </div>
+                    <div class="content-burger" id="sauce-chili">
+                        <img src="Assets/Create Burger/chili sauce.png" alt="">
+                    </div>
+                    <div class="content-burger" id="sauce-bbq">
+                        <img src="Assets/Create Burger/bbq sauce.png" alt="">
+                    </div>
+                    <div class="content-burger" id="sauce-cheese">
+                        <img src="Assets/Create Burger/cheese sauce.png" alt="">
+                    </div>
+                    <div class="content-burger" id="lettuce">
+                        <img src="Assets/Create Burger/lettuce.png" alt="">
+                    </div>
+                    <div class="content-burger" id="bottom-bun">
+                        <img src="Assets/Create Burger/regular bun bottom.png" alt="">
+                    </div>
+                </div>
+                <h1>Rp. 100.000,-</h1>
+                <div class="form-answer section1b">
+                    <select name="" class="custom-select">
+                        <option value="">Choose your serving type</option>
+                        <option value="">Dine in</option>
+                        <option value="">Take away</option>
                     </select>
                     <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
                 </div>
-            </div>
-            <div class="input-box">
-                <h1 class="form-details">Name It!</h1>
-                <div class="form-answer">
-                    <input type="text" placeholder="Please name your burger..." name="" id="text-field">
-                </div>
+                
+                <button class="button">Add to Cart</button>
             </div>
         </div>
+        
     </section>
+
 </body>
 <script src="script.js"></script>
 </html>

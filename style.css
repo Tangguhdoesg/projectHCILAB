@@ -141,12 +141,14 @@
 }
 
 #container-section1 img {
+  width: 35%;
 }
 
 #text-section1 {
   text-align: left; 
   color: #D73515;
   font-family: var(--main-font);
+  width: 50%;
 }
 
 #text-section1 h1{
@@ -163,64 +165,82 @@
 }
 
 #title-section2 {
-  /* text-decoration: underline; */
+  text-decoration: underline;
   color: #D73515;
   font-size: 50px;
   font-family: var(--main-font);
   font-weight: 900;
-  border-bottom: #D73515;
+  text-underline-offset: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .container-section2 {
+  width: 100%;
+}
+
+.content {  
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.content {
-  width: 50%;
+  gap: 1rem;
 }
 
 .content img {
-  height: 50vh;
+  width: 50%;
 }
 
 .content-item {
-  padding: 0px 50px;
+  width: 50%;
+  height: 100%;
+}
+
+.content-item h2, p {
+  color: #66392E;
+  font-family: var(--main-font);
 }
 
 /* Section 3 */
 .section3 {
   background-color: #F5E7E7;
   position: relative;
-  padding: 36px 0px;
+  padding: 0px 40px 60px 40px;
 }
 
 .section3 h1 {
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 1rem;
+  font-family: var(--main-font);
+  color: #FF8732;
+  font-size: 30px;
+}
+
+.title-section3-promotions {
+  font-size: 50px;
+  color: #D73515;
 }
 
 /* Slider Pakai Unordered List  */
 .prev {
   position: absolute;
   top: 50%;
-  left: 300px;
+  left: 15%;
   font-size: 25px;
   cursor: pointer;
+  color: #D73515;
 }
 
 .next {
   position: absolute;
   top: 50%;
   font-size: 25px;
-  right: 300px;
+  right: 15%;
   cursor: pointer;
+  color: #D73515;
 }
 
 .slider {
   width: 650px;
-  height: 650px;
+  height: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -247,13 +267,13 @@
 .navigation-manual{
   position: absolute;
   width: 650px;
-  margin-top: -40px;
+  bottom: 2rem;
   display: flex;
   justify-content: center;
-}
+  }
 
 .manual-btn{
-  border: 2px solid black;
+  border: 2px solid #D73515;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -265,7 +285,7 @@
 }
 
 .manual-btn:hover{
-  background: black;
+  background: #D73515;
 }
 
 #radio1:checked ~ .first{
@@ -293,11 +313,12 @@
   display: flex;
   width: 650px;
   justify-content: center;
-  margin-top: 610px;
+  bottom: 2rem;
+  cursor: pointer;
 }
 
 .navigation-auto div{
-  border: 2px solid black;
+  border: 2px solid #D73515;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -308,23 +329,23 @@
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-  background: black;
+  background: #D73515;  
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-  background: black;
+  background: #D73515;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-  background: black;
+  background: #D73515;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-  background: black;
+  background: #D73515;
 }
 
 #radio5:checked ~ .navigation-auto .auto-btn5{
-  background: black;
+  background: #D73515;
 }
 
 /* Wave Bottom Border */
@@ -353,5 +374,106 @@
 #footer>a>img{
   margin: 10px;
   width: 5ch;
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  :root {
+    --main-font: 'Poppins', sans-serif; 
+  }
+  
+  #header{
+    background-color: #F5E7E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+  
+  #logo{
+    height: 8vh;
+    margin-left: 16px;
+  }
+  
+  #logoBawah{
+    width: 10vh;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #F5E7E7;
+    font-family: Arial;
+  }
+    
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #FF8732;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    width: 28ch;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #FF8732;
+    padding: 14px 8px;
+    background-color: inherit;
+    margin: 0; 
+    font-family: var(--main-font);
+    font-weight: 900;
+  }
+  
+  #arrow{
+    width: 5%;
+  }
+  
+  .navbar a:hover, .dropdown:hover {
+    background-color: whitesmoke;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    align-items: flex-end;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #FF8732;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: var(--main-font);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #F5E7E7;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 
