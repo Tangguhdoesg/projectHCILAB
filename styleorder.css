@@ -92,7 +92,6 @@
 }
 
 #footer{
-    
     background-color: #F5E7E7;
     display: flex;
     justify-content: center;
@@ -138,7 +137,6 @@
     background: #F5E7E7;
     border: 5px solid #FF8732;
     margin: 20px 0 12px 0;
-
 }
 
 form .customer-details .input-box{
