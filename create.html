@@ -5,10 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Burger</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_create.css">
 </head>
 <body>
-    
+    <section id="header">
+        <!-- <h2>Burger KEng</h2> -->
+        <div>
+          <img src="Assets/Logo.png" alt="" id="logo">
+        </div>
+        <div class="navbar" id="topbar">
+            <div class="dropdown">
+              <button class="dropbtn">Where do you want to go?</button>
+              <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="order.html">Order</a>
+                <a href="create.html">Create Burger</a>
+                <a href="team.html">Our Team</a>
+              </div>
+              <img src="assets/icon/navigation/arrow_forward_ios_24px.png" alt="" id="arrow">
+            </div>   
+        </div>
+    </section>
+
+    <!-- Bagian 1 -->
+    <section class="section1">
+        <h1 id="title-section1">CREATE YOUR OWN BURGER</h1>
+        <div class="container-section1">
+            <div class="input-box">
+                <h1 class="form-details">Bread</h1>
+                <div class="form-answer">
+                    <select name="bread" id="">
+                        <option value="0">Choose your desired bread...</option>
+                        <option value="1">Regular</option>
+                        <option value="2">Wheat Bread</option>
+                    </select>
+                    <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
+                </div>
+            </div>
+            <div class="input-box">
+                <h1 class="form-details">Meat</h1>
+                <div class="form-answer">
+                    <select name="meat" id="">
+                        <option value="0">Choose your desired meat...</option>
+                        <option value="1">Beef</option>
+                        <option value="2">Chicken</option>
+                        <option value="3">Fish</option>
+                    </select>
+                    <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
+                </div>
+            </div>
+            <div class="input-box">
+                <h1 class="form-details">Sauce</h1>
+                <div class="form-checkbox">
+                    <input type="checkbox" name="Mushroom" id="">
+                    <label for="Mushroom">Mushroom</label>
+                    <input type="checkbox" name="Barbeque" id="">
+                    <label for="Barbeque">Barbeque</label>
+                    <input type="checkbox" name="Chilli" id="">
+                    <label for="Chilli">Chilli</label>
+                    <input type="checkbox" name="Cheese" id="">
+                    <label for="Cheese">Cheese</label>
+                    <!-- <select name="sauce" id="">
+                        <option value="0">Choose your desired sauce...</option>
+                        <option value="1">Mushroom</option>
+                        <option value="2">Barbeque</option>
+                        <option value="3">Chilli</option>
+                        <option value="4">Cheese</option>
+                    </select> -->
+                </div>
+            </div>
+            <div class="input-box">
+                <h1 class="form-details">Vegetable</h1>
+                <div class="form-answer">
+                    <select name="vegetable" id="">
+                        <option value="0">Add the vegetable?</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                    <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
+                </div>
+            </div>
+            <div class="input-box">
+                <h1 class="form-details">Name It!</h1>
+                <div class="form-answer">
+                    <input type="text" placeholder="Please name your burger..." name="" id="text-field">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>

@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #header{
+    background-color: #F5E7E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 100%;
+    top: 0;
+    z-index: 100000;
+  }
+  
+  #logo{
+    height: 8vh;
+    margin-left: 16px;
+  }
+  
+  #logoBawah{
+    width: 10vh;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #F5E7E7;
+    font-family: Arial;
+  }
+    
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #FF8732;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    width: 28ch;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #FF8732;
+    padding: 14px 8px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  
+  #arrow{
+    width: 5%;
+  }
+  
+  .navbar a:hover, .dropdown:hover {
+    background-color: whitesmoke;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    align-items: flex-end;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #FF8732;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #F5E7E7;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.section1{
+    background-color: #D73515;
+    color: white;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 120px; */
+    /* padding-right: 120px; */
+  }
+
+  #title-section1 {
+    margin: 24px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .container-section1 {
+    background-color: #F5E7E7;
+    color: #D73515;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 78px;
+    border-radius: 15px;
+    border-color: #FF8732;
+    border-style: solid;
+    padding: 2rem 0rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
+    padding-right: 10rem;
+  }
+
+  .input-box .form-details{
+    /* display: flex; */
+    flex: 1.5;
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #D73515;
+  }
+
+  .input-box .form-answer {
+    flex: 2;
+    text-align: left;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+
+    color: #D73515;
+    border: 2px solid #D73515;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 40px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .input-box .form-checkbox {
+    flex: 2;
+  }
+
+  .input-box select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    color: inherit;
+  }
+
+
+  .input-box #text-field {
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .input-box input::placeholder {
+    color: #D73515;
+  }
+
+  /* select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  } */
+
+  
+

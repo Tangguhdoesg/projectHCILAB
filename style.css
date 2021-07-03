@@ -90,6 +90,7 @@
   display: block;
 }
 
+/* Section 1 */
 .section1{
   background-color: #D73515;
   color: white;
@@ -177,7 +178,7 @@
 .section3 {
   background-color: #F5E7E7;
   position: relative;
-  padding-bottom: 36px;
+  padding: 36px 0px;
 }
 
 .section3 h1 {
@@ -185,20 +186,7 @@
   margin-bottom: 36px;
 }
 
-/* Slider Pakai Div */
-.slider-container {
-  width: 30%;
-  margin: auto;
-}
-
-.item-slider {
-  width: 100%;
-}
-
-.item-slider img {
-  width: 100%;
-}
-
+/* Slider Pakai Unordered List  */
 .prev {
   position: absolute;
   top: 50%;
@@ -215,7 +203,6 @@
   cursor: pointer;
 }
 
-/* Slider Pakai Unordered List  */
 .slider {
   width: 650px;
   height: 650px;
@@ -227,9 +214,6 @@
   display: flex;
   height: 650px;
   width: 600%;
-  /* list-style: none;
-  margin: 0;
-  padding: 0; */
 }
 
 .slides input {
@@ -237,8 +221,6 @@
 }
 
 .slide {
-  /* float: left; */
-  /* width: 20%; Perlu diubah */
   transition: 2s;
 }
 
@@ -329,6 +311,17 @@
 #radio5:checked ~ .navigation-auto .auto-btn5{
   background: black;
 }
+
+/* Wave Bottom Border */
+/* .customBorder{
+  background-image: url('Assets/wave.png');
+  background-size: cover;
+  padding: 36px 0px;
+} */
+
+/* .customBorder img {
+  height: 0.5%;
+} */
 
 /* footer */
 #footer{
