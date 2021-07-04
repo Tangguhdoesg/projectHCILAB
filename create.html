@@ -36,7 +36,7 @@
                 <div class="input-box">
                     <h1 class="form-details">Bread</h1>
                     <div class="form-answer section1a">
-                        <select name="bread" class="custom-select">
+                        <select name="bread" class="custom-select" id="selectBread">
                             <option value="1">Regular</option>
                             <option value="2">Wheat Bread</option>
                         </select>
@@ -46,7 +46,7 @@
                 <div class="input-box">
                     <h1 class="form-details">Meat</h1>
                     <div class="form-answer section1a">
-                        <select name="meat" class="custom-select">
+                        <select name="meat" class="custom-select" id="selectMeat">
                             <option value="1">Beef</option>
                             <option value="2">Chicken</option>
                             <option value="3">Fish</option>
@@ -59,13 +59,13 @@
                     <div class="form-checkbox">
                         <div>
                             <label class="checkbox-container">
-                                <input type="checkbox" name="Mushroom" id="">
+                                <input type="checkbox" name="Mushroom" id="selectMushroom">
                                 <span class="checkmark"></span>
                                 Mushroom
                             </label>
                             <br>
                             <label class="checkbox-container">
-                                <input type="checkbox" name="Chilli" id="">
+                                <input type="checkbox" name="Chilli" id="selectChilli">
                                 <span class="checkmark"></span>
                                 Chilli
                             </label>
@@ -73,24 +73,23 @@
                         
                         <div>
                             <label class="checkbox-container">
-                                <input type="checkbox" name="Barbeque" id="">
+                                <input type="checkbox" name="Barbeque" id="selectBBQ">
                                 <span class="checkmark"></span>
                                 Barbeque
                             </label>
                             <br>
                             <label class="checkbox-container">
-                                <input type="checkbox" name="Cheese" id="">
+                                <input type="checkbox" name="Cheese" id="selectCheese">
                                 <span class="checkmark"></span>
                                 Cheese
                             </label>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="input-box">
                     <h1 class="form-details">Vegetable</h1>
                     <div class="form-answer section1a">
-                        <select name="vegetable" class="custom-select">
+                        <select name="vegetable" class="custom-select" id="selectVegetable">
                             <option value="1">Yes</option>
                             <option value="2">No</option>
                         </select>
@@ -100,7 +99,7 @@
                 <div class="input-box">
                     <h1 class="form-details">Name It!</h1>
                     <div class="form-answer section1a">
-                        <input type="text" placeholder="Please name your burger..." name="" id="text-field">
+                        <input type="text" placeholder="Please name your burger..." name="" id="customBurgerName">
                     </div>
                 </div>
             </div>
@@ -109,25 +108,27 @@
                 <h1>This is how your burger looks like.</h1>
                 <div class="custom-burger">
                     <div class="burger-ingredients z-7" id="top-bun">
-                        <img src="Assets/Create Burger/regular bun top.png" alt="">
+                        <img src="Assets/Create Burger/regular bun top.png" alt="" >
                     </div>
-                    <div class="burger-ingredients z-6" id="meat">
-                        <img src="Assets/Create Burger/fish patty.png" alt="">
+                    <div class="burger-ingredients z-6">
+                        <img src="Assets/Create Burger/beef patty.png" alt="" id="meat">
                     </div>
-                    <div class="burger-ingredients z-5" id="sauce-mushroom">
+
+                    <div class="burger-ingredients z-5" id="lettuce">
+                        <img src="Assets/Create Burger/lettuce.png" alt="">
+                    </div>
+
+                    <div class="burger-ingredients z-4 sauce" id="sauce-mushroom">
                         <img src="Assets/Create Burger/mushroom sauce.png" alt="">
                     </div>
-                    <!-- <div class="burger-ingredients z-4" id="sauce-chili">
+                    <div class="burger-ingredients z-3 sauce" id="sauce-chilli">
                         <img src="Assets/Create Burger/chili sauce.png" alt="">
                     </div>
-                    <div class="burger-ingredients z-3" id="sauce-bbq">
+                    <div class="burger-ingredients z-2 sauce" id="sauce-bbq">
                         <img src="Assets/Create Burger/bbq sauce.png" alt="">
                     </div>
-                    <div class="burger-ingredients z-2" id="sauce-cheese">
+                    <div class="burger-ingredients z-1 sauce" id="sauce-cheese">
                         <img src="Assets/Create Burger/cheese sauce.png" alt="">
-                    </div> -->
-                    <div class="burger-ingredients z-1" id="lettuce">
-                        <img src="Assets/Create Burger/lettuce.png" alt="">
                     </div>
                     <div class="burger-ingredients z-0" id="bottom-bun">
                         <img src="Assets/Create Burger/regular bun bottom.png" alt="">
@@ -148,11 +149,8 @@
         </div>
         
     </section>
-    <div id="screensaver">
-        <canvas id="canvas"></canvas>
-    </div>
 
 </body>
-<script src="script.js"></script>
-<!-- <script src="script_screensaver.js"></script> -->
+<script src="jquery-3.6.0.min.js"></script>
+<script src="script_createBurger.js"></script>
 </html>
