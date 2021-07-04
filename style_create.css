@@ -384,6 +384,7 @@
   padding: 15px 32px;
   border-radius: 15px;
   width: 50%;
+  cursor: pointer;
 }
 
 #screensaver{
@@ -784,6 +785,7 @@
     padding: 15px 32px;
     border-radius: 15px;
     width: 50%;
+    cursor: pointer;
   }
 
   #screensaver{
