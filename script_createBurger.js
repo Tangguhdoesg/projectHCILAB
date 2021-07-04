@@ -1,5 +1,22 @@
 $("document").ready(main)
 
+const DATA_KEY = "DATA_STORAGE";
+const CART_KEY = "CART_STORAGE";
+
+let items = [
+    {id : 1, nama : "SteakHouse Meal", harga : 100000},
+    {id : 2, nama : "American BrewHouse", harga : 100000},
+    {id : 3, nama : "Chicken Big King", harga : 75000},
+    {id : 4, nama : "Double Cheeseburger", harga : 95000},
+    {id : 5, nama : "SteakHouse", harga : 85000},
+    {id : 6, nama : "Whooper", harga : 80000},
+    {id : 7, nama : "Beef Royale", harga : 85000},
+    {id : 8, nama : "Double Whooper", harga : 90000},
+    {id : 9, nama : "Big King", harga : 95000},
+    {id : 10, nama : "Hawaiian Chicken", harga : 100000},
+    {id : 11, nama : "Custom Burger", harga : "100000"}
+]
+
 // Ingredients
 let selectedBread, selectedMeat, selectedVegetable
 
@@ -59,6 +76,11 @@ function main(){
     $("#selectCheese").change(function(){
         $("#sauce-cheese").toggle(".notDisplay")
     })
+
+    // document.getElementById(addToCart).onclick = function(){
+    //     increaseItem(11);
+    //     location.href="OrderandCart.html";
+    // }
 }
 
 function checkedSauce(){
@@ -81,4 +103,45 @@ function initCustomBurger() {
     selectedBread = $('#selectBread').find(":selected").text();
     selectedMeat = $("#selectMeat").find(":selected").text()
     selectedVegetable = $("#selectVegetable").find(":selected").text()
+}
+
+function buttonAddToCart(){
+    increaseItem(11);
+    document.location.href="OrderandCart.html";
+}
+
+function setLocalStorage(key, value){
+    localStorage.setItem(key,JSON.stringify(value));
+    // initCart();
+}
+function getLocalStorage(key){
+    return JSON.parse(localStorage.getItem(key));
+}
+
+function increaseItem(id){
+    const local = getLocalStorage(CART_KEY);
+    const newItem = items.find((key)=>{
+        //=== -> cek sampai ke tipe yg kita cek sama ato nggak
+        // if(key.id === id) return key;
+        return key.id === id;
+    });
+    // newItem["jumlah"] = 1
+    newItem.jumlah = 1
+    
+    //tambahkan item kedalam storage yg masih kosong
+    if(!local){
+        setLocalStorage(CART_KEY,[newItem]);
+        return;
+    }
+    const flag = local.find((key)=>{
+        if(key.id === id){
+            //check item jika sudah pernah di tambahkan ++
+            key.jumlah++;
+            return key;
+        }
+    });
+    if(!flag){
+        local.push(newItem);
+    }
+    setLocalStorage(CART_KEY,local)
 }

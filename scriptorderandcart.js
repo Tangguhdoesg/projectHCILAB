@@ -1,5 +1,6 @@
 const DATA_KEY = "DATA_STORAGE";
 const CART_KEY = "CART_STORAGE";
+const CREATE_KEY = "CUSTOM_STORAGE";
 
 let items = [
     {id : 1, nama : "SteakHouse Meal", harga : 100000},
@@ -11,7 +12,8 @@ let items = [
     {id : 7, nama : "Beef Royale", harga : 85000},
     {id : 8, nama : "Double Whooper", harga : 90000},
     {id : 9, nama : "Big King", harga : 95000},
-    {id : 10, nama : "Hawaiian Chicken", harga : 100000}
+    {id : 10, nama : "Hawaiian Chicken", harga : 100000},
+    {id : 11, nama : "Custom Burger", harga : "100000"}
 ]
 
 $(function(){
@@ -122,4 +124,8 @@ function submitOrder(){
     alert("Order by " + localDATA.name + " has been completed !");
     document.location.href="index.html";
     initCart();
+}
+
+function createBurger(){
+    document.location.href="create.html";
 }
