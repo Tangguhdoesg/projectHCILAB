@@ -17,7 +17,7 @@ function setErrorLog(text){
 
 function deleteData(node){
     if(confirm("Are you sure?")){
-     node.parentNode.parentNode.remove();
+        node.parentNode.parentNode.remove();
     }
  }
 
