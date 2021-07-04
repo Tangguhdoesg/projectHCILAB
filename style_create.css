@@ -98,6 +98,21 @@
     display: block;
   }
 
+#footer{
+    background-color: #F5E7E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer>h3{
+    color: #FF8732;
+}
+
+#footer>a>img{
+    margin: 10px;
+    width: 5ch;
+}
+
 .section1{
     background-color: #D73515;
     color: white;
