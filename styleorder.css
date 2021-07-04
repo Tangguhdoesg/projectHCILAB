@@ -129,6 +129,7 @@
     margin-left: 35px;
     border-radius: 5px;
     font-weight: 800;
+    font-family: var(--main-font);
     font-size: 50px;
     line-height: 75px;
     color: #F5E7E7;
@@ -154,6 +155,7 @@ form .customer-details .input-box{
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
+    font-family: var(--main-font);
     line-height: 48px;
     color: #D73515;
     margin-right: 20px;
@@ -164,6 +166,7 @@ form .customer-details .input-box{
     box-sizing: border-box;
     outline: none;
     font-size: 16px;
+    font-family: var(--main-font);
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 15px;
@@ -174,39 +177,39 @@ form .customer-details .input-box{
 }
 
 #nameDetails{
-    margin-left: 136px;
+    margin-left: 158px;
 }
 #nameID{
     margin-left: 4px;
 }
 
 #emailDetails{
-    margin-left: 18px;
+    margin-left: 20px;
 }
 #emailID{
     margin-left: 2px;
 }
 
 #phoneDetails{
-    margin-left: 10px;
+    margin-left: 11px;
 }
 #phoneID{
     margin-left: 2px;
 }
 
 #addressDetails{
-    margin-left: 104px;
+    margin-left: 118px;
 }
 #addressID{
     margin-left: 3px;
 }
 
 #servingDetails{
-    margin-left: 32px;
+    margin-left: 40px;
 }
 
 #servingTypeID{
-    margin-left: 8px;
+    margin-left: 2px;
 }
 
 /* #menuID{
@@ -236,6 +239,7 @@ form .customer-details .input-box{
     box-sizing: border-box;
     outline: none;
     font-size: 16px;
+    font-family: var(--main-font);
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 15px;
@@ -267,6 +271,7 @@ form .button input{
     color: #fff;
     border: none;
     font-size: 18px;
+    font-family: var(--main-font);
     font-weight: 500;
     border-radius: 15px;
     letter-spacing: 1px;
