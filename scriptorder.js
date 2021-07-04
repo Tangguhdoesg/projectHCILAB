@@ -1,4 +1,6 @@
 const DATA_KEY = "DATA_STORAGE";
+const CART_KEY = "CART_STORAGE";
+const CREATE_KEY = "CUSTOM_STORAGE";
 
 $(function(){
 
@@ -87,6 +89,10 @@ function registerSubmit(e){
     
     let dataCustomer = {name: names, email: email, phone: phone, address: address, servingType: servingType};
     console.log(dataCustomer)
+    if(localStorage != null){
+        localStorage.removeItem(DATA_KEY)
+        localStorage.removeItem(CART_KEY)
+    }
     setLocalStorage(DATA_KEY,dataCustomer);
     
     form.reset();

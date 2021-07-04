@@ -328,6 +328,31 @@
     cursor:pointer
 }
 
+.buttonCreateBurger{
+    height: 45px;
+    margin: 20px 0;
+    text-align: right;
+    margin-right: 60px;
+}
+
+.buttonCreateBurger input{
+    height: 100%;
+    width: 30%;
+    outline: none;
+    color: #D73515;
+    border-radius: 35px;
+    border: 5px solid #FF8732;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: none;
+}
+
+.buttonCreateBurger :hover{
+    cursor: pointer;
+}
+
 #screensaver{
     position: absolute; 
     left:0px; 
