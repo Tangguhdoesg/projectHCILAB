@@ -120,8 +120,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* padding-left: 120px; */
-    /* padding-right: 120px; */
   }
 
   #title-section1 {
@@ -154,7 +152,6 @@
   }
 
   .input-box .form-details{
-    /* display: flex; */
     flex: 1;
     font-family: var(--main-font);
     text-align: right;
@@ -256,29 +253,24 @@
     border-radius: 5px;
   }
 
-  /* On mouse-over, add a grey background color */
 .checkbox-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a orange background */
 .checkbox-container input:checked ~ .checkmark {
   background-color: #D73515;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .checkbox-container .checkmark:after {
   left: 6px;
   width: 8px;
@@ -303,8 +295,6 @@
 }
 
 .custom-burger{
-  /* margin: 0 auto;
-  height: auto; */
   display: block;
   margin-bottom: 140px;
 }
@@ -522,8 +512,6 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      /* padding-left: 120px; */
-      /* padding-right: 120px; */
     }
 
     #title-section1 {
@@ -556,7 +544,6 @@
     }
 
     .input-box .form-details{
-      /* display: flex; */
       flex: 1;
       font-family: var(--main-font);
       text-align: right;
@@ -658,29 +645,24 @@
       border-radius: 5px;
     }
 
-    /* On mouse-over, add a grey background color */
   .checkbox-container:hover input ~ .checkmark {
     background-color: #ccc;
   }
 
-  /* When the checkbox is checked, add a orange background */
   .checkbox-container input:checked ~ .checkmark {
     background-color: #D73515;
   }
 
-  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
 
-  /* Show the checkmark when checked */
   .checkbox-container input:checked ~ .checkmark:after {
     display: block;
   }
 
-  /* Style the checkmark/indicator */
   .checkbox-container .checkmark:after {
     left: 6px;
     width: 8px;
@@ -704,8 +686,6 @@
   }
 
   .custom-burger{
-    /* margin: 0 auto;
-    height: auto; */
     display: block;
     margin-bottom: 140px;
   }
