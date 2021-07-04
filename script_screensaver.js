@@ -2,8 +2,8 @@ window.onload = () =>{
     let canvas = document.getElementById("canvas")
     let ctx = canvas.getContext("2d")
 
-    canvas.height = document.body.scrollHeight
-    canvas.width = document.body.scrollWidth
+    canvas.height = window.innerHeight
+    canvas.width = window.innerWidth
 
     let img = new Image()
     img.src = 'Assets/Logo.png'
@@ -17,6 +17,8 @@ window.onload = () =>{
     let vy = 1
     img.onload = () =>{};
     function render(){
+        canvas.height = window.innerHeight
+        canvas.width = window.innerWidth
         ctx.clearRect(0,0,canvasWidht,canvasHeight)
         ctx.drawImage(img,x,y,boxW,boxH)
         x+=vx
@@ -43,6 +45,9 @@ window.onload = () =>{
             $('#header').fadeOut()
             $('#footer').fadeOut()
             $('#backgroundtengah').fadeOut()
+            $('.section1').fadeOut()
+            $('.section2').fadeOut()
+            $('.section3').fadeOut()
             screensaver_active = true;
             screensaver_animation();
         }
@@ -52,6 +57,9 @@ window.onload = () =>{
             $('#header').fadeIn()
             $('#footer').fadeIn()
             $('#backgroundtengah').fadeIn()
+            $('.section1').fadeIn()
+            $('.section2').fadeIn()
+            $('.section1').fadeIn()
             screensaver_active = false;
         }
     
@@ -82,7 +90,6 @@ window.onload = () =>{
                 requestAnimationFrame(render)
             }
         }
-        // $(document).
     }
     screensaver()
 }
