@@ -182,32 +182,6 @@
    
 
 }
-/* .input-box{
-    margin-bottom: 15px;
-}
-
-.input-box{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 48px;
-    color: #D73515;
-    margin-right: 20px;
-} */
-
-/* .input-box {
-    border: 2px solid #D73515;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 15px;
-    height: 40px;
-    width: 300px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-} */
 
 #servingTypeID{
     border: 2px solid #D73515;

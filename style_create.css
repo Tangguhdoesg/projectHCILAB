@@ -305,44 +305,6 @@
   margin-bottom: -140px;
 }
 
-/* #top-bun{
-  z-index: 7;
-}
-
-#meat {
-  top: -100px;
-  z-index: 6;
-}
-
-#sauce-mushroom{
-  top: -230px;
-  z-index: 5;
-}
-
-#sauce-chili {
-  top: -410px;
-  z-index: 4;
-}
-
-#sauce-bbq{
-  top: -590px;
-  z-index: 3;
-}
-
-#sauce-cheese {
-  top: -770px;
-  z-index: 2;
-}
-
-#lettuce{
-  top: -950px;
-  z-index: 1;
-}
-
-#bottom-bun {
-  top: -1080px;
-} */
-
 .z-1{
   z-index: 101!important;
 }
