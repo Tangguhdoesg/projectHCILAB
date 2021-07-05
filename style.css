@@ -106,8 +106,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* padding-left: 120px; */
-    /* padding-right: 120px; */
 }
 
 #section1-bestseller {
@@ -216,7 +214,6 @@
   color: #D73515;
 }
 
-/* Slider Pakai Unordered List  */
 .prev {
   position: absolute;
   top: 50%;
@@ -480,8 +477,6 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      /* padding-left: 120px; */
-      /* padding-right: 120px; */
   }
 
   #section1-bestseller {
@@ -586,7 +581,6 @@
     color: #D73515;
   }
 
-  /* Slider Pakai Unordered List  */
   .prev {
     position: absolute;
     top: 50%;

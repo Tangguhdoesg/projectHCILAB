@@ -34,7 +34,6 @@ let imgBBQ = document.querySelector("#sauce-bbq")
 let imgCheese = document.querySelector("#sauce-cheese")
 
 function main(){
-    // initCustomBurger()
     console.log(imgTopBread.src)
     $("#selectBread").change(function(){
         selectedBread = $(this).find(":selected").text()
@@ -77,10 +76,6 @@ function main(){
         $("#sauce-cheese").toggle(".notDisplay")
     })
 
-    // document.getElementById(addToCart).onclick = function(){
-    //     increaseItem(11);
-    //     location.href="OrderandCart.html";
-    // }
 }
 
 function checkedSauce(){
@@ -112,7 +107,6 @@ function buttonAddToCart(){
 
 function setLocalStorage(key, value){
     localStorage.setItem(key,JSON.stringify(value));
-    // initCart();
 }
 function getLocalStorage(key){
     return JSON.parse(localStorage.getItem(key));
@@ -121,21 +115,16 @@ function getLocalStorage(key){
 function increaseItem(id){
     const local = getLocalStorage(CART_KEY);
     const newItem = items.find((key)=>{
-        //=== -> cek sampai ke tipe yg kita cek sama ato nggak
-        // if(key.id === id) return key;
         return key.id === id;
     });
-    // newItem["jumlah"] = 1
     newItem.jumlah = 1
     
-    //tambahkan item kedalam storage yg masih kosong
     if(!local){
         setLocalStorage(CART_KEY,[newItem]);
         return;
     }
     const flag = local.find((key)=>{
         if(key.id === id){
-            //check item jika sudah pernah di tambahkan ++
             key.jumlah++;
             return key;
         }

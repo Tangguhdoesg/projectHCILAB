@@ -128,5 +128,4 @@ function screensaver(){
         }
     }
 }
-// const ORDER_STORAGE = "ORDER_STORAGE";
 

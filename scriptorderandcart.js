@@ -55,18 +55,6 @@ function initCart(){
     document.getElementById("total").innerHTML = "Rp " + total + ",-"
 }
 
-    
-
-/* <div class = "table">
-                <button class="buttonCart" onClick=increaseItem(${key.id})>+</button>
-                <button class="buttonCart" onClick=decreaseItem(${key.id})>-</button>
-                <div class ="cartClass">
-                    <h3 class = "cartDetails" id="jumlah">${key.jumlah}</h3>
-                    <h3 class = "cartDetails" id="nama">${key.nama}</h3>
-                    <h3 class = "cartDetails" id="harga">${key.harga}</h3>
-                </div>
-</div> */
-
 function docWrite(variable) {
     document.write(variable);
 }
@@ -74,21 +62,16 @@ function docWrite(variable) {
 function increaseItem(id){
     const local = getLocalStorage(CART_KEY);
     const newItem = items.find((key)=>{
-        //=== -> cek sampai ke tipe yg kita cek sama ato nggak
-        // if(key.id === id) return key;
         return key.id === id;
     });
-    // newItem["jumlah"] = 1
     newItem.jumlah = 1
     
-    //tambahkan item kedalam storage yg masih kosong
     if(!local){
         setLocalStorage(CART_KEY,[newItem]);
         return;
     }
     const flag = local.find((key)=>{
         if(key.id === id){
-            //check item jika sudah pernah di tambahkan ++
             key.jumlah++;
             return key;
         }
@@ -118,7 +101,6 @@ function decreaseItem(id){
 
 function submitOrder(){
     const localDATA = getLocalStorage(DATA_KEY)
-    // const localCART = getLocalStorage(CART_KEY)
     localStorage.removeItem(DATA_KEY)
     localStorage.removeItem(CART_KEY)
     alert("Order by " + localDATA.name + " has been completed !");

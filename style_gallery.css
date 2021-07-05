@@ -152,7 +152,6 @@
     padding: 30px;
     margin: 30px;
     border: 30px;
-    /* width: 25vw; */
 }
 
 .Nama{
@@ -179,17 +178,12 @@
         display: initial;
         background-color: #F5E7E7;
         margin: 20px;
-        /* display: grid; */
-        /* justify-content: baseline; */
     }
     .Gambar{
         background-color: #F5E7E7;
         padding-top: 0px;
         
-    }
-    /* .navbar{
-        margin-right: 20px;
-    } */    
+    } 
    
 
 }

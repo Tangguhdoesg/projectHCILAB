@@ -154,7 +154,6 @@
     padding: 30px;
     margin: 30px;
     border: 30px;
-    /* width: 25vw; */
 }
 
 .Nama{
@@ -183,32 +182,6 @@
    
 
 }
-/* .input-box{
-    margin-bottom: 15px;
-}
-
-.input-box{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 48px;
-    color: #D73515;
-    margin-right: 20px;
-} */
-
-/* .input-box {
-    border: 2px solid #D73515;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 15px;
-    height: 40px;
-    width: 300px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-} */
 
 #servingTypeID{
     border: 2px solid #D73515;
@@ -339,12 +312,10 @@
     height: 45px;
     margin: 20px 0;
     text-align: right;
-    /* margin-right: 60px; */
 }
 
 .buttonCreateBurger input{
     height: 100%;
-    /* width: 30%; */
     padding: 10px;
     outline: none;
     color: #D73515;
@@ -356,7 +327,7 @@
     border-radius: 15px;
     letter-spacing: 1px;
     background: #fff;
-    /* background: none; */
+    text-align: center;
 }
 
 .buttonCreateBurger :hover{
@@ -367,8 +338,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     font-family: var(--main-font);
-    /* justify-content:; */
 }
 
 #screensaver{
