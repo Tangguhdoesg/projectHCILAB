@@ -124,6 +124,7 @@
     
 }
 #tulisanGallery{
+    font-family: var(--main-font);
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -141,6 +142,7 @@
 }
 
 .Gambar{
+    font-family: var(--main-font);
     padding: 30px;
     margin: auto;
     align-content: center;
