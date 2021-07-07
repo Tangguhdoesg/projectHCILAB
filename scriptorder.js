@@ -23,7 +23,14 @@ function deleteData(node){
     }
  }
 
-
+ function checkOrder(){
+    if(sessionStorage.getItem(DATA_KEY) != null){
+        document.location.href = "create.html"
+    }
+    else{
+        alert("You need to fill the form in the order menu first !")
+    }
+}
 
 function registerSubmit(e){
     e.preventDefault();
@@ -85,8 +92,4 @@ function getSessionStorage(key){
     return JSON.parse(sessionStorage.getItem(key));
 }
 
-window.onunload = () => {
-    // Clear the local storage
-    window.localStorage.clear()
- }
 
