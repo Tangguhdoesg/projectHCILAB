@@ -105,22 +105,22 @@ function buttonAddToCart(){
     document.location.href="OrderandCart.html";
 }
 
-function setLocalStorage(key, value){
-    localStorage.setItem(key,JSON.stringify(value));
+function setSessionStorage(key, value){
+    sessionStorage.setItem(key,JSON.stringify(value));
 }
-function getLocalStorage(key){
-    return JSON.parse(localStorage.getItem(key));
+function getSessionStorage(key){
+    return JSON.parse(sessionStorage.getItem(key));
 }
 
 function increaseItem(id){
-    const local = getLocalStorage(CART_KEY);
+    const local = getSessionStorage(CART_KEY);
     const newItem = items.find((key)=>{
         return key.id === id;
     });
     newItem.jumlah = 1
     
     if(!local){
-        setLocalStorage(CART_KEY,[newItem]);
+        setSessionStorage(CART_KEY,[newItem]);
         return;
     }
     const flag = local.find((key)=>{
@@ -132,7 +132,7 @@ function increaseItem(id){
     if(!flag){
         local.push(newItem);
     }
-    setLocalStorage(CART_KEY,local)
+    setSessionStorage(CART_KEY,local)
 }
 
 window.onunload = () => {

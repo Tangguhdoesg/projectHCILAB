@@ -22,19 +22,19 @@ $(function(){
     
 });
 
-function setLocalStorage(key, value){
-    localStorage.setItem(key,JSON.stringify(value));
+function setSessionStorage(key, value){
+    sessionStorage.setItem(key,JSON.stringify(value));
     initCart();
 }
-function getLocalStorage(key){
-    return JSON.parse(localStorage.getItem(key));
+function getSessionStorage(key){
+    return JSON.parse(sessionStorage.getItem(key));
 }
 let total = 0
 
 function initCart(){
     const cartList = $('#cartList');
     cartList.empty();
-    const local = getLocalStorage(CART_KEY)
+    const local = getSessionStorage(CART_KEY)
     total = 0
     local.forEach(key =>{
         cartList.append(
@@ -60,14 +60,14 @@ function docWrite(variable) {
 }
 
 function increaseItem(id){
-    const local = getLocalStorage(CART_KEY);
+    const local = getSessionStorage(CART_KEY);
     const newItem = items.find((key)=>{
         return key.id === id;
     });
     newItem.jumlah = 1
     
     if(!local){
-        setLocalStorage(CART_KEY,[newItem]);
+        setSessionStorage(CART_KEY,[newItem]);
         return;
     }
     const flag = local.find((key)=>{
@@ -79,11 +79,11 @@ function increaseItem(id){
     if(!flag){
         local.push(newItem);
     }
-    setLocalStorage(CART_KEY,local)
+    setSessionStorage(CART_KEY,local)
 }
 
 function decreaseItem(id){
-    const local = getLocalStorage(CART_KEY)
+    const local = getSessionStorage(CART_KEY)
     if(!local){
         alert("Belum ada item yang ditambahkan")
         return;
@@ -96,13 +96,13 @@ function decreaseItem(id){
     const newLocal = local.filter((key)=>{
         return key.jumlah > 0;
     })
-    setLocalStorage(CART_KEY,newLocal)
+    setSessionStorage(CART_KEY,newLocal)
 }
 
 function submitOrder(){
-    const localDATA = getLocalStorage(DATA_KEY)
-    localStorage.removeItem(DATA_KEY)
-    localStorage.removeItem(CART_KEY)
+    const localDATA = getSessionStorage(DATA_KEY)
+    sessionStorage.removeItem(DATA_KEY)
+    sessionStorage.removeItem(CART_KEY)
     alert("Order by " + localDATA.name + " has been completed !");
     document.location.href="index.html";
     initCart();

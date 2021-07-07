@@ -67,22 +67,22 @@ function registerSubmit(e){
     
     let dataCustomer = {name: names, email: email, phone: phone, address: address, servingType: servingType};
     console.log(dataCustomer)
-    if(localStorage.getItem(DATA_KEY) != null){
-        localStorage.removeItem(DATA_KEY)
-        localStorage.removeItem(CART_KEY)
+    if(sessionStorage.getItem(DATA_KEY) != null){
+        sessionStorage.removeItem(DATA_KEY)
+        sessionStorage.removeItem(CART_KEY)
     }
-    setLocalStorage(DATA_KEY,dataCustomer);
+    setSessionStorage(DATA_KEY,dataCustomer);
     
     form.reset();
     document.location.href="OrderandCart.html";
 
 }
 
-function setLocalStorage(key, value){
-    localStorage.setItem(key,JSON.stringify(value));
+function setSessionStorage(key, value){
+    sessionStorage.setItem(key,JSON.stringify(value));
 }
-function getLocalStorage(key){
-    return JSON.parse(localStorage.getItem(key));
+function getSessionStorage(key){
+    return JSON.parse(sessionStorage.getItem(key));
 }
 
 window.onunload = () => {

@@ -46,7 +46,7 @@ function main(){
 }
 
 function checkOrder(){
-    if(localStorage.getItem(DATA_KEY) != null){
+    if(sessionStorage.getItem(DATA_KEY) != null){
         document.location.href = "create.html"
     }
     else{
