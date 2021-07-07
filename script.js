@@ -3,6 +3,8 @@ var counterSlide = 1;
 let canvas = document.getElementById("canvas")
 let ctx = canvas.getContext("2d")
 
+const DATA_KEY = "DATA_STORAGE";
+
 canvas.height = window.innerHeight
 canvas.width = window.innerWidth
 
@@ -39,7 +41,17 @@ function main(){
         }
         console.log(counterSlide)
     })
+
     screensaver()
+}
+
+function checkOrder(){
+    if(localStorage.getItem(DATA_KEY) != null){
+        document.location.href = "create.html"
+    }
+    else{
+        alert("You need to fill the form in the order menu first !")
+    }
 }
 
 function animationSlider(){
@@ -128,4 +140,9 @@ function screensaver(){
         }
     }
 }
+
+window.onunload = () => {
+    // Clear the local storage
+    window.localStorage.clear()
+ }
 

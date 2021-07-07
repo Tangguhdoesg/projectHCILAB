@@ -67,7 +67,7 @@ function registerSubmit(e){
     
     let dataCustomer = {name: names, email: email, phone: phone, address: address, servingType: servingType};
     console.log(dataCustomer)
-    if(localStorage != null){
+    if(localStorage.getItem(DATA_KEY) != null){
         localStorage.removeItem(DATA_KEY)
         localStorage.removeItem(CART_KEY)
     }
@@ -84,4 +84,9 @@ function setLocalStorage(key, value){
 function getLocalStorage(key){
     return JSON.parse(localStorage.getItem(key));
 }
+
+window.onunload = () => {
+    // Clear the local storage
+    window.localStorage.clear()
+ }
 

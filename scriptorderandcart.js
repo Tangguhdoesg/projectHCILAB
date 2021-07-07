@@ -111,3 +111,8 @@ function submitOrder(){
 function createBurger(){
     document.location.href="create.html";
 }
+
+window.onunload = () => {
+    // Clear the local storage
+    window.localStorage.clear()
+ }

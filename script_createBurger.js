@@ -134,3 +134,8 @@ function increaseItem(id){
     }
     setLocalStorage(CART_KEY,local)
 }
+
+window.onunload = () => {
+    // Clear the local storage
+    window.localStorage.clear()
+ }
