@@ -316,7 +316,7 @@
 
 .buttonCreateBurger input{
     height: 100%;
-    padding: 10px;
+    padding: 0 10px;
     outline: none;
     color: #D73515;
     border-radius: 35px;
