@@ -8,7 +8,7 @@
   :root {
     --main-font: 'Poppins', sans-serif; 
   }
-  
+  /* Header Section */
   #header{
     background-color: #F5E7E7;
     display: flex;
@@ -98,7 +98,7 @@
     display: block;
   }
 
-/* Section 1 */
+/* List of class and id for best seller section */
 .section1{
   background-color: #D73515;
     color: white;
@@ -152,7 +152,7 @@
   margin-bottom: 16px;
 }
 
-/* Section 2 */
+/* List of class and id for recommendation section */
 .section2 {
   background-color: #F5E7E7;
   height: 75%;
@@ -194,7 +194,7 @@
   font-family: var(--main-font);
 }
 
-/* Section 3 */
+/* List of class and id for promotion (image slider) section */
 .section3 {
   background-color: #F5E7E7;
   position: relative;
@@ -342,7 +342,7 @@
   background: #D73515;
 }
 
-/* footer */
+/* Footer Section */
 #footer{
   background-color: #F5E7E7;
   display: flex;
@@ -380,6 +380,7 @@
       --main-font: 'Poppins', sans-serif; 
     }
     
+    /* Header Section Mobile */
     #header{
       background-color: #F5E7E7;
       display: flex;
@@ -469,7 +470,7 @@
       display: block;
     }
 
-  /* Section 1 */
+  /* List of class and id for best seller section mobile */
   .section1{
     background-color: #D73515;
       color: white;
@@ -524,7 +525,7 @@
     margin-bottom: 16px;
   }
 
-  /* Section 2 */
+  /* List of class and id for recommendation section mobile */
   .section2 {
     background-color: #F5E7E7;
     height: 75%;
@@ -561,7 +562,7 @@
     font-family: var(--main-font);
   }
 
-  /* Section 3 */
+  /* List of class and id for promotion (image slider) section mobile */
   .section3 {
     background-color: #F5E7E7;
     position: relative;
@@ -707,7 +708,7 @@
     background: #D73515;
   }
 
-  /* footer */
+  /* Footer Section Mobile */
   #footer{
     background-color: #F5E7E7;
     display: flex;
