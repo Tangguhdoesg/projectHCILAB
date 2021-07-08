@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style_create.css">
 </head>
 <body>
+    <!-- Header Section -->
     <section id="header">
         <div>
           <img src="Assets/Logo.png" alt="" id="logo">
@@ -26,13 +27,16 @@
             </div>   
         </div>
     </section>
+    <!-- End of Header Section -->
 
-    <!-- Bagian 1 -->
+    <!-- Create Burger Section -->
     <section class="section1">
         <h1 id="title-section1">CREATE YOUR OWN BURGER</h1>
         <div class="container-section1">
+            <!-- Insert Data Create Burger Section -->
             <div>
-                <div class="input-box">
+                <!-- Form Choose Bread -->
+                <div class="input-box"> 
                     <h1 class="form-details">Bread</h1>
                     <div class="form-answer section1a">
                         <select name="bread" class="custom-select" id="selectBread">
@@ -42,6 +46,9 @@
                         <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
                     </div>
                 </div>
+                <!-- End of Form Choose Bread -->
+
+                <!-- Form Choose Meat -->
                 <div class="input-box">
                     <h1 class="form-details">Meat</h1>
                     <div class="form-answer section1a">
@@ -53,6 +60,9 @@
                         <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
                     </div>
                 </div>
+                <!-- End of Form Choose Meat -->
+
+                <!-- Form Check Sauce -->
                 <div class="input-box">
                     <h1 class="form-details">Sauce</h1>
                     <div class="form-checkbox">
@@ -85,6 +95,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- End of Form Check Sauce -->
+
+                <!-- Form Vegetable -->
                 <div class="input-box">
                     <h1 class="form-details">Vegetable</h1>
                     <div class="form-answer section1a">
@@ -95,14 +108,20 @@
                         <img src="Assets/icon/navigation/arrow_forward_ios_24px.png" alt="">
                     </div>
                 </div>
+                <!-- End of Form Vegetable -->
+
+                <!-- Form Name Burger -->
                 <div class="input-box">
                     <h1 class="form-details">Name It!</h1>
                     <div class="form-answer section1a">
                         <input type="text" placeholder="Please name your burger..." name="" id="customBurgerName">
                     </div>
                 </div>
+                <!-- End of Form Name Burger -->
             </div>
+            <!-- End of Insert Data Create Burger Section -->
 
+            <!-- Show Custom Burger Section -->
             <div class="create-burger-container">
                 <h1>This is how your burger looks like.</h1>
                 <div class="custom-burger">
@@ -135,8 +154,12 @@
                 
                 <button class="button" onclick="buttonAddToCart()">Add to Cart</button>
             </div>
+            <!-- End of Show Custom Burger Section -->
         </div>
     </section>
+    <!-- End of Create Burger Section -->
+
+    <!-- Footer Section -->
     <section id="footer">
         <h3>MEET</h3>
         <img src="Assets/Logo.png" id="logoBawah">
@@ -151,6 +174,9 @@
             <img src="Assets/twitter.png" alt="">
         </a>
     </section>
+    <!-- End of Footer Section -->
+
+    <!-- Screensaver -->
     <div id="screensaver">
         <canvas id="canvas"></canvas>
     </div>

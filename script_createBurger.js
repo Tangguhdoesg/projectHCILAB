@@ -1,8 +1,10 @@
 $("document").ready(main)
 
+// Variable for session storage key
 const DATA_KEY = "DATA_STORAGE";
 const CART_KEY = "CART_STORAGE";
 
+// Item list burger
 let items = [
     {id : 1, nama : "SteakHouse Meal", harga : 100000},
     {id : 2, nama : "American BrewHouse", harga : 100000},
@@ -23,8 +25,7 @@ let selectedBread, selectedMeat, selectedVegetable
 // Sauce
 let mushroom, chilli, bbq, cheese
 
-
-// Image
+// Variable for selecting image on create burger
 let imgTopBread = document.querySelector("#top-bun img")
 let imgBottomBread = document.querySelector("#bottom-bun img")
 let imgMeat = document.getElementById("meat")
@@ -33,9 +34,9 @@ let imgChilli = document.querySelector("#sauce-chilli")
 let imgBBQ = document.querySelector("#sauce-bbq")
 let imgCheese = document.querySelector("#sauce-cheese")
 
+// Main function
 function main(){
-    console.log(imgTopBread.src)
-    $("#selectBread").change(function(){
+    $("#selectBread").change(function(){ // Function onchange to change image bun
         selectedBread = $(this).find(":selected").text()
         if(selectedBread === "Regular"){
             imgTopBread.src = "Assets/Create Burger/regular bun top.png"
@@ -46,7 +47,7 @@ function main(){
             imgBottomBread.src = "Assets/Create Burger/wheat bun bottom.png"
         }
     })
-    $("#selectMeat").change(function(){
+    $("#selectMeat").change(function(){ // Function onchange to change image meat
         selectedMeat = $(this).find(":selected").text()
         if(selectedMeat === "Beef"){
             imgMeat.src = "Assets/Create Burger/beef patty.png"
@@ -58,46 +59,24 @@ function main(){
             imgMeat.src = "Assets/Create Burger/fish patty.png"
         }
     })
-    $("#selectVegetable").change(function(){
+    $("#selectVegetable").change(function(){ // Function to toggle image vegetable
         selectedVegetable = $(this).find(":selected").text()
         $("#lettuce").toggle(".notDisplay")
     })
 
-    $("#selectMushroom").change(function(){
+    $("#selectMushroom").change(function(){ //Function to toggle image sauce mushroom
         $("#sauce-mushroom").toggle(".notDisplay")
     })
-    $("#selectChilli").change(function(){
+    $("#selectChilli").change(function(){ //Function to toggle image sauce chilli
         $("#sauce-chilli").toggle(".notDisplay")
     })
-    $("#selectBBQ").change(function(){
+    $("#selectBBQ").change(function(){ //Function to toggle image sauce bbq
         $("#sauce-bbq").toggle(".notDisplay")
     })
-    $("#selectCheese").change(function(){
+    $("#selectCheese").change(function(){ //Function to toggle image sauce cheese
         $("#sauce-cheese").toggle(".notDisplay")
     })
 
-}
-
-function checkedSauce(){
-    if(document.getElementById("selectMushroom").checked()){
-        $("#sauce-mushroom").toggle(".notDisplay")
-    }
-    else if(document.getElementById("selectChilli").checked()){
-
-    }
-    else if(document.getElementById("selectBBQ").checked()){
-
-    }
-    else {
-
-    }
-
-}
-
-function initCustomBurger() {
-    selectedBread = $('#selectBread').find(":selected").text();
-    selectedMeat = $("#selectMeat").find(":selected").text()
-    selectedVegetable = $("#selectVegetable").find(":selected").text()
 }
 
 function buttonAddToCart(){
