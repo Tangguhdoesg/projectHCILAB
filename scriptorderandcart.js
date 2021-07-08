@@ -1,7 +1,9 @@
+// session storage key
 const DATA_KEY = "DATA_STORAGE";
 const CART_KEY = "CART_STORAGE";
 const CREATE_KEY = "CUSTOM_STORAGE";
 
+// list item
 let items = [
     {id : 1, nama : "SteakHouse Meal", harga : 100000},
     {id : 2, nama : "American BrewHouse", harga : 100000},
@@ -16,21 +18,28 @@ let items = [
     {id : 11, nama : "Custom Burger", harga : "100000"}
 ]
 
+
+// main function
 $(function(){
 
     initCart();
     
 });
 
+// set session storage
 function setSessionStorage(key, value){
     sessionStorage.setItem(key,JSON.stringify(value));
     initCart();
 }
+
+// get session storage
 function getSessionStorage(key){
     return JSON.parse(sessionStorage.getItem(key));
 }
+// define total
 let total = 0
 
+// init cart and total
 function initCart(){
     const cartList = $('#cartList');
     cartList.empty();
@@ -55,10 +64,8 @@ function initCart(){
     document.getElementById("total").innerHTML = "Rp " + total + ",-"
 }
 
-function docWrite(variable) {
-    document.write(variable);
-}
 
+// increase item session storage
 function increaseItem(id){
     const local = getSessionStorage(CART_KEY);
     const newItem = items.find((key)=>{
@@ -82,6 +89,7 @@ function increaseItem(id){
     setSessionStorage(CART_KEY,local)
 }
 
+// decrease item in session storage
 function decreaseItem(id){
     const local = getSessionStorage(CART_KEY)
     if(!local){
@@ -99,6 +107,8 @@ function decreaseItem(id){
     setSessionStorage(CART_KEY,newLocal)
 }
 
+
+// checkout function
 function submitOrder(){
     const localDATA = getSessionStorage(DATA_KEY)
     sessionStorage.removeItem(DATA_KEY)
@@ -108,10 +118,12 @@ function submitOrder(){
     initCart();
 }
 
+// create burger button function
 function createBurger(){
     document.location.href="create.html";
 }
 
+// check order if order form null then cannot go to navigation of create burger
 function checkOrder(){
     if(sessionStorage.getItem(DATA_KEY) != null){
         document.location.href = "create.html"

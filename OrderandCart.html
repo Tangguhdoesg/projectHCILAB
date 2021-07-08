@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style_orderandcart.css">
 </head>
 <body>
+    <!-- header -->
     <section id="header">
         <div>
           <img src="Assets/Logo.png" alt="" id="logo">
@@ -28,9 +29,11 @@
           
       </section>
 
+    <!-- body -->
     <section id="backgroundtengah">
     <h1 id="tulisanGallery">Our Menu</h1>
         <div id="backgroundGambar">
+            <!-- menu -->
             <div class="colum">
                 <div class="Gambar">
                     <img src="Assets/Steakhouse Meal.png" alt="">
@@ -126,6 +129,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- create burger -->
         <div id="createBurger">
             <h3>or maybe try...</h3>
             <div class="buttonCreateBurger" onclick="createBurger()">
@@ -134,28 +139,32 @@
 
         </div>
 
+        <!-- cart -->
         <h1 id="cartBanner">YOUR CART.</h1>
         <table id="cartID">
             <tbody id="cartList">
             </tbody>
         </table>
 
+        <!-- total price -->
         <div class="totalClass">
             <h3 id="totalBanner">Total</h3>
             <p id = "total"></p>
         </div>
 
+        <!-- checkout button -->
         <div class="buttonCheckout" onClick=submitOrder()>
             <input type="button" value="Checkout">
         </div>
 
     </section>
 
+    <!-- screen saver -->
     <div id="screensaver">
         <canvas id="canvas"></canvas>
     </div>
 
-
+    <!-- footer -->
     <section id="footer">
         <h3>MEET</h3>
         <img src="Assets/Logo.png" id="logoBawah">
@@ -172,6 +181,8 @@
         
       </section>
 </body>
+
+<!-- .js -->
 <script src="jquery-3.5.1.min.js"></script>
 <script src="scriptorderandcart.js"></script>
 <script src="script_screensaver.js"></script>

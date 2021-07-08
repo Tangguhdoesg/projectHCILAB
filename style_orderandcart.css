@@ -223,6 +223,8 @@
     cursor:pointer
 }
 
+/* cart */
+
 #cartBanner{
     font-family: var(--main-font);
     font-size: 36px;
@@ -266,6 +268,8 @@
     
 }
 
+/* total price */
+
 .totalClass{
     font-family: var(--main-font);
     display: flex;
@@ -283,6 +287,7 @@
     font-size: 36px;
 }
 
+/* checkout button */
 
 .buttonCheckout{
     height: 45px;
@@ -310,6 +315,7 @@
     cursor:pointer
 }
 
+/* create burger button */
 .buttonCreateBurger{
     height: 45px;
     margin: 20px 0;
@@ -343,6 +349,9 @@
     text-align: center;
     font-family: var(--main-font);
 }
+
+
+/* screen saver */
 
 #screensaver{
     position: absolute; 

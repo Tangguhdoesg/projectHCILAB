@@ -1,7 +1,10 @@
+// session storage key
 const DATA_KEY = "DATA_STORAGE";
 const CART_KEY = "CART_STORAGE";
 const CREATE_KEY = "CUSTOM_STORAGE";
 
+
+// main function
 $(function(){
 
     let formOrder = document.getElementById("formOrder");
@@ -10,20 +13,16 @@ $(function(){
 });
 
 
-
+// error log 
 function setErrorLog(text){
     let errorLog = document.getElementById("errorLog");
     errorLog.innerHTML = text;
     return;
 }
 
-function deleteData(node){
-    if(confirm("Are you sure?")){
-        node.parentNode.parentNode.remove();
-    }
- }
 
- function checkOrder(){
+// check order if order form null then cannot go to navigation of create burger
+function checkOrder(){
     if(sessionStorage.getItem(DATA_KEY) != null){
         document.location.href = "create.html"
     }
@@ -32,6 +31,7 @@ function deleteData(node){
     }
 }
 
+// registering the form 
 function registerSubmit(e){
     e.preventDefault();
     let pleaseSelect = "select"
@@ -85,9 +85,12 @@ function registerSubmit(e){
 
 }
 
+// set session storage
 function setSessionStorage(key, value){
     sessionStorage.setItem(key,JSON.stringify(value));
 }
+
+// get session storage
 function getSessionStorage(key){
     return JSON.parse(sessionStorage.getItem(key));
 }
