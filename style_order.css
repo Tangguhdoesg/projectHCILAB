@@ -8,7 +8,9 @@
   :root {
     --main-font: 'Poppins', sans-serif; 
   }
+
   
+ /* header  */
   #header{
     background-color: #F5E7E7;
     display: flex;
@@ -98,6 +100,11 @@
     display: block;
   }
 
+/* end of header  */
+
+
+/* footer */
+
 #footer{
     background-color: #F5E7E7;
     display: flex;
@@ -112,7 +119,9 @@
     margin: 10px;
     width: 5ch;
 }
+/* end of footer */
 
+/* body */
 .container{
     display: flex;
     height: 100vh;
@@ -135,6 +144,8 @@
     color: #F5E7E7;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* field input */
 
 .container form .customer-details{
     display: flex;
@@ -227,6 +238,8 @@ form .customer-details .input-box{
     transition: all 0.3s ease;
 }
 
+/* button */
+
 form .button{
     height: 45px;
     margin: 20px 0;
@@ -253,6 +266,8 @@ form .button input:hover{
     cursor: pointer;
 }
 
+/* error log */
+
 #errorLog{
     font-size: 18px;
     font-weight: bold;
@@ -262,6 +277,8 @@ form .button input:hover{
     padding: 0px;
     margin: 0px;
 }
+
+/* screen saver */
 
 #screensaver{
     position: absolute; 
@@ -273,6 +290,9 @@ form .button input:hover{
     background-color: #F5E7E7;
   }
 
+
+/* Adjust screen */
+  
 @media screen and (max-width: 700px){
 
     .container{
