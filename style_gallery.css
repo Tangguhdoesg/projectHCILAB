@@ -8,7 +8,7 @@
   :root {
     --main-font: 'Poppins', sans-serif; 
   }
-  
+/* Style for Header and NavBar */
   #header{
     background-color: #F5E7E7;
     display: flex;
@@ -97,7 +97,9 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+/* End of Section */
 
+/* Style for Footer*/
 #footer{
     background-color: #F5E7E7;
     display: flex;
@@ -112,8 +114,9 @@
     margin: 10px;
     width: 5ch;
 }
+/* End of Style for footer */
 
-
+/* Style for Gallery picture*/
 #tengah{
     background-color: #D73515;
     color: white;
@@ -173,6 +176,9 @@
     display: none;
     background-color: #F5E7E7;
 }
+/* End of Style for gallery */
+
+/* Style for mobile screen */
 
 @media screen and (max-width: 700px){
 
@@ -190,3 +196,4 @@
 
 }
 
+/* End of style for mobile screen */

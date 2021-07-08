@@ -1,3 +1,4 @@
+// Script for ScreenSaver
 window.onload = () =>{
     let canvas = document.getElementById("canvas")
     let ctx = canvas.getContext("2d")
@@ -16,6 +17,7 @@ window.onload = () =>{
     let vx = 1
     let vy = 1
     img.onload = () =>{};
+    // Function to render image to the screen
     function render(){
         ctx.clearRect(0,0,canvasWidht,canvasHeight)
         ctx.drawImage(img,x,y,boxW,boxH)
@@ -31,7 +33,7 @@ window.onload = () =>{
     
         requestAnimationFrame(render)
     }
-    
+    // Screen saver function
     function screensaver(){
         var mousetimeout;
         var screensaver_active = false;

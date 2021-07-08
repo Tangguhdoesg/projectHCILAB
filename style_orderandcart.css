@@ -8,7 +8,7 @@
   :root {
     --main-font: 'Poppins', sans-serif; 
   }
-  
+/* Style for Header and Navbar */
   #header{
     background-color: #F5E7E7;
     display: flex;
@@ -97,7 +97,9 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+/* End of style for Header and Navbar */
 
+/* Style for Footer */
 #footer{
     background-color: #F5E7E7;
     display: flex;
@@ -112,7 +114,7 @@
     margin: 10px;
     width: 5ch;
 }
-
+/* End of Style for Footer */
 
 #backgroundtengah{
     background-color: #D73515;
