@@ -1,9 +1,13 @@
 $('document').ready(main)
+// Variable for counting page on image slider
 var counterSlide = 1;
+
+// Variable for session storage key
+const DATA_KEY = "DATA_STORAGE";
+
+// Variable for Screensaver
 let canvas = document.getElementById("canvas")
 let ctx = canvas.getContext("2d")
-
-const DATA_KEY = "DATA_STORAGE";
 
 canvas.height = window.innerHeight
 canvas.width = window.innerWidth
@@ -20,31 +24,29 @@ let vx = 1
 let vy = 1
 img.onload = () =>{};
 
+// Main Function
 function main(){
     let maxIndex = $('.slide').length
-    animationSlider()
+    animationSlider() // Function for auto slide image slider
 
-    console.log('Max index ' + maxIndex)
-
-    $('.prev').click(() => {
+    $('.prev').click(() => { // Onclick for left arrow to go to previous image
         if(counterSlide > 0){
             --counterSlide
             document.getElementById('radio'+counterSlide).checked = true
         }
-        console.log(counterSlide)
     })
 
-    $('.next').click(() => {
+    $('.next').click(() => {  // Onclick for right arrow to go to next image
         if(counterSlide < maxIndex){
             ++counterSlide
             document.getElementById('radio'+counterSlide).checked = true
         }
-        console.log(counterSlide)
     })
 
-    screensaver()
+    screensaver() // Function for screensaver
 }
 
+// Function to check wether the order is filled or not before go to create burger page
 function checkOrder(){
     if(sessionStorage.getItem(DATA_KEY) != null){
         document.location.href = "create.html"
@@ -54,6 +56,7 @@ function checkOrder(){
     }
 }
 
+// Function for auto slide image slider
 function animationSlider(){
     var counter = 1
     document.getElementById('radio'+counter).checked = true
@@ -65,6 +68,7 @@ function animationSlider(){
         }
     }, 5000)
 }
+
 function render(){
     canvas.height = window.innerHeight
     canvas.width = window.innerWidth
