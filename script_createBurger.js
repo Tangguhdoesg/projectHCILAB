@@ -76,21 +76,24 @@ function main(){
     $("#selectCheese").change(function(){ //Function to toggle image sauce cheese
         $("#sauce-cheese").toggle(".notDisplay")
     })
-
 }
 
+// Function to go to order and cart page after clicking add to cart button
 function buttonAddToCart(){
     increaseItem(11);
     document.location.href="OrderandCart.html";
 }
 
+// Set item to session storage
 function setSessionStorage(key, value){
     sessionStorage.setItem(key,JSON.stringify(value));
 }
+// Get item from session storage 
 function getSessionStorage(key){
     return JSON.parse(sessionStorage.getItem(key));
 }
 
+// Function to increasing item on order and cart page
 function increaseItem(id){
     const local = getSessionStorage(CART_KEY);
     const newItem = items.find((key)=>{
